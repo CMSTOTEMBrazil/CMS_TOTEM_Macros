@@ -574,6 +574,12 @@ for(vector<TString>::iterator itfiles = vfiles->begin(); itfiles != vfiles->end(
 		histosTH1F["track_multiplicity"]->Fill( n_tracks_selected, event_weight );
 
 		//include Muon and Dimuons
+		double chmu1 = 0.; double chmu2 = 0.;
+                double phimu1 = 0.;double ptmu1 = 0.;double etamu1 = 0.;double ymu1 = 0.;
+                double phimu2 = 0.;double ptmu2 = 0.;double etamu2 = 0.;double ymu2 = 0.;
+                double deltaphi = 0.;double deltaeta = 0.;double deltapt = 0.;double deltay = 0.;double Dphi = 0.;
+                double dimuon_mass = 0.; double dimuon_pt=0.; double dimuon_pt2=0.;double dimuon_eta =0.;double dimuon_rapidity = 0.;
+                double jpsi_mass = 0.; double jpsi_pt=0.; double jpsi_pt2=0.;double jpsi_eta =0.;double jpsi_rapidity = 0.;
 
 		vector<MyMuon> muons_selected;
 		for(vector<MyMuon>::iterator it_muon = muon_coll->begin() ; it_muon != muon_coll->end() ; ++it_muon){
@@ -606,12 +612,12 @@ for(vector<TString>::iterator itfiles = vfiles->begin(); itfiles != vfiles->end(
                   if(verbose)cout<<"muons selected size (>=2) :"<<muons_selected.size()<<endl;
                 //===============================================================
                 //Muon pairs
-                  double chmu1 = 0.; double chmu2 = 0.;
+                 /* double chmu1 = 0.; double chmu2 = 0.;
                   double phimu1 = 0.;double ptmu1 = 0.;double etamu1 = 0.;double ymu1 = 0.;
                   double phimu2 = 0.;double ptmu2 = 0.;double etamu2 = 0.;double ymu2 = 0.;
                   double deltaphi = 0.;double deltaeta = 0.;double deltapt = 0.;double deltay = 0.;double Dphi = 0.;
                   double dimuon_mass = 0.; double dimuon_pt=0.; double dimuon_pt2=0.;double dimuon_eta =0.;double dimuon_rapidity = 0.;
-                  double jpsi_mass = 0.; double jpsi_pt=0.; double jpsi_pt2=0.;double jpsi_eta =0.;double jpsi_rapidity = 0.;
+                  double jpsi_mass = 0.; double jpsi_pt=0.; double jpsi_pt2=0.;double jpsi_eta =0.;double jpsi_rapidity = 0.;*/
                   for(vector<MyMuon>::iterator it_mu1 = muons_selected.begin() ;
                                         it_mu1 != muons_selected.end() ; ++it_mu1){
 				        histosTH1F["muon1_pt"]->Fill( it_mu1->Pt(), event_weight );
@@ -698,12 +704,12 @@ for(vector<TString>::iterator itfiles = vfiles->begin(); itfiles != vfiles->end(
                     }
 
                 //===========
-                chmuons = ( chmu1*chmu2 < 0. );
-                cout<<"chmuons before"<<chmuons<<endl;
-                if( !chmuons ) continue;
+                ///chmuons = ( chmu1*chmu2 < 0. );
+                //cout<<"chmuons before"<<chmuons<<endl;
+                //if( !chmuons ) continue;
                 cout<<"chmuons after"<<chmuons<<endl;
-                if( !mu2_selected ) continue;
-                 cout<<"mu2_selected"<<mu2_selected<<endl;
+                //if( !mu2_selected ) continue;
+                cout<<"mu2_selected"<<mu2_selected<<endl;
                 //===============================================================
 		//GenPart
 		double genEPlusPz = 0.;
