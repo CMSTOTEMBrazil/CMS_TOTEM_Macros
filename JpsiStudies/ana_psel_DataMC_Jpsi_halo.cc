@@ -1757,10 +1757,7 @@ t_proton_minus_rec = t_proton_minus + gRandom->Gaus(0,sigma_t56);
 							( ( proton_minus_rp_accept_120 && proton_minus_rp_accept_124 && fiducial_minus_120124 )||
 							  ( proton_minus_rp_accept_121 && proton_minus_rp_accept_125 && fiducial_minus_121125 ));}
 
-					if(sdminus){
-						proton_minus_rp_accept = (proton_pz_minus < 0.) && 
-							( ( proton_minus_rp_accept_120 && proton_minus_rp_accept_124 )||
-							  ( proton_minus_rp_accept_121 && proton_minus_rp_accept_125 ));}
+				
 					//sdminus
 					if(verbose)cout<<"RP combinations accept"<<endl;
 					if(sdplus){
