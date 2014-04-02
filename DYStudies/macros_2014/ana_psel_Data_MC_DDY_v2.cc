@@ -276,44 +276,45 @@ void ana_psel_DataMC_DDY_v2(vector<string> const& fileNames, string const& outpu
 	histosTH1F["muon1_eta"] = new TH1F("muon1_eta", "#eta(mu1)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon1_phi"] = new TH1F("muon1_phi", "#phi(muon1)" , 100 , -1.2*M_PI ,1.2*M_PI);
 	histosTH1F["muon1_rapidity"] = new TH1F("muon1_rapidity", "y(mu1)" , 100 , -15. , 15.);
-	//Muon1 info
 
+	//Muon2 info
 	histosTH1F["muon2_pt"] = new TH1F("muon2_pt", "p_{T}(mu2)" , 100 , 0. , 100.);
 	histosTH1F["muon2_eta"] = new TH1F("muon2_eta", "#eta(mu2)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon2_phi"] = new TH1F("muon2_phi", "#phi(muon2)" , 100 , -1.2*M_PI ,1.2*M_PI);
 	histosTH1F["muon2_rapidity"] = new TH1F("muon2_rapidity", "y(mu2)" , 100 , -15. , 15.);
 
 	//Muon1 info proton right
-
 	histosTH1F["muon1_pt_proton_right"] = new TH1F("muon1_pt_proton_right", "p_{T}(mu1)" , 100 , 0. , 100.);
 	histosTH1F["muon1_eta_proton_right"] = new TH1F("muon1_eta_proton_right", "#eta(mu1)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon1_phi_proton_right"] = new TH1F("muon1_phi_proton_right", "#phi(muon1)" , 100 , -1.2*M_PI ,1.2*M_PI);
 	histosTH1F["muon1_rapidity_proton_right"] = new TH1F("muon1_rapidity_proton_right", "y(mu1)" , 100 , -15. , 15.);
-	//Muon2 info
 
+	//Muon2 info proton right
 	histosTH1F["muon2_pt_proton_right"] = new TH1F("muon2_pt_proton_right", "p_{T}(mu2)" , 100 , 0. , 100.);
 	histosTH1F["muon2_eta_proton_right"] = new TH1F("muon2_eta_proton_right", "#eta(mu2)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon2_phi_proton_right"] = new TH1F("muon2_phi_proton_right", "#phi(muon2)" , 100 , -1.2*M_PI ,1.2*M_PI);
 	histosTH1F["muon2_rapidity_proton_right"] = new TH1F("muon2_rapidity_proton_right", "y(mu2)" , 100 , -15. , 15.);
+
 	/// Muon 1 RP 
 	histosTH1F["muon1_pt_rpplus_accept"]= new TH1F("muon1_pt_rpplus_accept", "p_{T}(mu1)" , 100 , 0. , 100.);
-
 	histosTH1F["muon1_eta_rpplus_accept"] = new TH1F("muon1_eta_rpplus_accept", "#eta(mu1)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon1_rapidity_rpplus_accept"] = new TH1F("muon1_phi_rpplus_accept", "#phi(muon1)" , 100 , -1.2*M_PI ,1.2*M_PI);
 	histosTH1F["muon1_phi_rpplus_accept"] = new TH1F("muon1_rapidity_rpplus_accept", "y(mu1)" , 100 , -15. , 15.);
-	//Second Muon RP
+
+	//Muon 2 RP
 	histosTH1F["muon2_pt_rpplus_accept"] = new TH1F("muon2_pt_rpplus_accept", "p_{T}(mu2)" , 100 , 0. , 100.);
 	histosTH1F["muon2_eta_rpplus_accept"] = new TH1F("muon2_eta_rpplus_accept", "#eta(mu2)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon2_rapidity_rpplus_accept"] = new TH1F("muon2_phi_rpplus_accept", "#phi(muon2)" , 100 , -1.2*M_PI ,1.2*M_PI);
 	histosTH1F["muon2_phi_rpplus_accept"] = new TH1F("muon2_rapidity_rpplus_accept", "y(mu2)" , 100 , -15. , 15.);
 	////////////////////////
+
 	/// Muon 1 RP 
 	histosTH1F["muon1_pt_rpminus_accept"]= new TH1F("muon1_pt_rpminus_accept", "p_{T}(mu1)" , 100 , 0. , 100.);
-
 	histosTH1F["muon1_eta_rpminus_accept"] = new TH1F("muon1_eta_rpminus_accept", "#eta(mu1)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon1_rapidity_rpminus_accept"] = new TH1F("muon1_phi_rpminus_accept", "#phi(muon1)" , 100 , -1.2*M_PI ,1.2*M_PI);
 	histosTH1F["muon1_phi_rpminus_accept"] = new TH1F("muon1_rapidity_rpminus_accept", "y(mu1)" , 100 , -15. , 15.);
-	//Second Muon RP
+
+	//Muon 2 RP
 	histosTH1F["muon2_pt_rpminus_accept"] = new TH1F("muon2_pt_rpminus_accept", "p_{T}(mu2)" , 100 , 0. , 100.);
 	histosTH1F["muon2_eta_rpminus_accept"] = new TH1F("muon2_eta_rpminus_accept", "#eta(mu2)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon2_rapidity_rpminus_accept"] = new TH1F("muon2_phi_rpminus_accept", "#phi(muon2)" , 100 , -1.2*M_PI ,1.2*M_PI);
@@ -322,13 +323,12 @@ void ana_psel_DataMC_DDY_v2(vector<string> const& fileNames, string const& outpu
 
 	///////////////
 	//Muon1 info proton left
-
 	histosTH1F["muon1_pt_proton_left"] = new TH1F("muon1_pt_proton_left", "p_{T}(mu1)" , 100 , 0. , 100.);
 	histosTH1F["muon1_eta_proton_left"] = new TH1F("muon1_eta_proton_left", "#eta(mu1)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon1_phi_proton_left"] = new TH1F("muon1_phi_proton_left", "#phi(muon1)" , 100 , -1.2*M_PI ,1.2*M_PI);
 	histosTH1F["muon1_rapidity_proton_left"] = new TH1F("muon1_rapidity_proton_left", "y(mu1)" , 100 , -15. , 15.);
-	//Muon2 info
 
+	//Muon2 info
 	histosTH1F["muon2_pt_proton_left"] = new TH1F("muon2_pt_proton_left", "p_{T}(mu2)" , 100 , 0. , 100.);
 	histosTH1F["muon2_eta_proton_left"] = new TH1F("muon2_eta_proton_left", "#eta(mu2)" , 100 , -5.2 , 5.2);
 	histosTH1F["muon2_phi_proton_left"] = new TH1F("muon2_phi_proton_left", "#phi(muon2)" , 100 , -1.2*M_PI ,1.2*M_PI);
@@ -340,6 +340,7 @@ void ana_psel_DataMC_DDY_v2(vector<string> const& fileNames, string const& outpu
 	histosTH1F["muonDeltaPhi"] = new TH1F("muonDeltaPhi", "#Delta#phi(mu1,mu2)" , 100 , -2.2*M_PI , 2.2*M_PI);
 	histosTH1F["muonDeltaY"] = new TH1F("muonDeltaY", "#Deltay(mu1,mu2)" , 100 , 0. , 10.);
 	histosTH1F["lorentzdphi"] = new TH1F("lorentzDPhi", "#Delta#phi(mu1,mu2)" , 100 , -2.2*M_PI , 2.2*M_PI);    
+
 	//Dimuon
 	histosTH1F["dimuon_mass"] = new TH1F("dimuon_mass", "mass(mu1,mu2)" , Bin_mass , 0. , 120.);
 	histosTH1F["dimuon_pt2"] = new TH1F("dimuon_pt2", "p_{T}^{2}(mu1,mu2)" , 100 , 0. , 1000.);
@@ -377,6 +378,18 @@ void ana_psel_DataMC_DDY_v2(vector<string> const& fileNames, string const& outpu
 	histosTH1F["dimuon_multiplicity_t_cut_proton_right"] = new TH1F("dimuon_multiplicity_t_cut_proton_right", "n dimuons" , 100 , 0 , 100);
 	histosTH1F["proton_right_xi_t_cut"] = new TH1F("proton_right_xi_t_selected", "#xi" , 100, 0. ,5.0);
 	histosTH1F["proton_right_t_t_cut"] = new TH1F("proton_right_t_t_selected", "-t" , 100, 0., 5.0);
+	//	
+	// xi and t rec
+	histosTH1F["t_proton_minus_rec"] = new TH1F("t_proton_minus_rec", "-t" , 100, 0., 5.0);
+
+	histosTH1F["xi_proton_minus_rec"] = new TH1F("xi_proton_minus_rec", "#xi" ,  200, -1.,1.);
+
+	histosTH1F["t_proton_plus_rec"] = new TH1F("t_proton_plus_rec", "-t" , 100, 0., 5.0);
+
+	histosTH1F["xi_proton_plus_rec"] = new TH1F("xi_proton_plus_rec", "#xi" ,  200, -1.,1.);
+
+
+
 	//Deltas info
 	histosTH1F["muonDeltaPt_t_cut_proton_right"] = new TH1F("muonDeltaPt_t_cut_proton_right", "#Deltap_{T}(mu1,mu2)" , 100 , 0. , 100.);
 	histosTH1F["muonDeltaEta_t_cut_proton_right"] = new TH1F("muonDeltaEta_t_cut_proton_right", "#Delta#eta(mu1,mu2)" , 100 , 0. , 10.);
@@ -1400,6 +1413,11 @@ void ana_psel_DataMC_DDY_v2(vector<string> const& fileNames, string const& outpu
 				bool proton_plus_rp_accept_025 = false;
 				bool proton_plus_rp_accept_120 = false;
 
+				bool fiducial_plus_020024 = false;
+				bool fiducial_plus_021025 = false;
+				bool fiducial_minus_120124 = false;
+				bool fiducial_minus_121125 = false;
+
 				std::map<int,std::vector<double> > proton_plus_pars;
 				std::map<int,std::vector<double> > proton_minus_pars;
 				if(sdplus){
@@ -1582,1244 +1600,1297 @@ void ana_psel_DataMC_DDY_v2(vector<string> const& fileNames, string const& outpu
 						histosTH2F["proton_minus_xi_vs_t"]->Fill( fabs(t_proton_minus) , xi_proton_minus , event_weight );
 					}
 				}//sdminus
+
+				// smearing /////////////////////////////////////////////////////////////
+				/*				float sigma_xi45=0.00714986 - 0.0408903*xi_proton_plus + 0.0965813*xi_proton_plus*xi_proton_plus; // sigma45 vs xi from Hubert
+								float sigma_xi56=0.00720615 - 0.0418783*xi_proton_minus + 0.0999515*xi_proton_minus*xi_proton_minus; // sigma56 vs xi from Hubert
+								xi_proton_plus_rec = xi_proton_plus + gRandom->Gaus(0,sigma_xi45);
+								xi_proton_minus_rec = xi_proton_minus + gRandom->Gaus(0,sigma_xi56);
+
+								double sigma_t45=0.233365*t_proton_plus - 0.0975751*t_proton_plus*t_proton_plus; // sigma_t45 vs t from Hubert
+								double sigma_t56=0.233365*t_proton_minus - 0.0975751*t_proton_minus*t_proton_minus; // sigma_t56 vs t from Hubert
+								t_proton_plus_rec = t_proton_plus + gRandom->Gaus(0,sigma_t45);
+								t_proton_minus_rec = t_proton_minus + gRandom->Gaus(0,sigma_t56);
+								histosTH1F["t_proton_minus_rec"]->Fill( fabs(t_proton_minus_rec) , event_weight );
+								histosTH1F["xi_proton_minus_rec"]->Fill( xi_proton_minus_rec , event_weight );
+								histosTH1F["t_proton_plus_rec"]->Fill( fabs(t_proton_plus_rec) , event_weight );
+								histosTH1F["xi_proton_plus_rec"]->Fill( xi_proton_plus_rec , event_weight );
+
+				 */
+
+
 				// Check RP combinations  
-				if(sdplus){
+				if(sdplus){	
+					if( proton_plus_rp_accept_020 && proton_plus_rp_accept_024){
+						//cout<< "rp_020_x ; rp_020_y:"<<proton_plus_pars[20][0]*1000.0<<" ; "<< proton_plus_pars[20][1]*1000.0<<endl;
+						//cout<< "rp_024_x ; rp_024_y:"<<proton_plus_pars[24][0]*1000.0<<" ; "<< proton_plus_pars[24][1]*1000.0<<endl;
+						fiducial_plus_020024 = ((proton_plus_pars[20][0] > -1.5*1000.0 && proton_plus_pars[20][0]*1000.0 < 6.5) &&
+								(proton_plus_pars[20][1]*1000.0 > 7.0 && proton_plus_pars[20][1]*1000.0 < 29.0) &&
+								(proton_plus_pars[24][0]*1000.0 > -1.5 && proton_plus_pars[24][0]*1000.0 < 6.5) &&
+								(proton_plus_pars[24][1]*1000.0 > 7.0 && proton_plus_pars[24][1]*1000.0 < 29.0));}
+					else if(( proton_plus_rp_accept_021 && proton_plus_rp_accept_025)){
+						//cout<< "rp_021_x ; rp_021_y:"<<proton_plus_pars[21][0]*1000.0<<" ; "<< proton_plus_pars[21][1]*1000.0<<endl;
+						//cout<< "rp_025_x ; rp_025_y:"<<proton_plus_pars[25][0]*1000.0<<" ; "<< proton_plus_pars[25][1]*1000.0<<endl;
+						fiducial_plus_021025 = ((proton_plus_pars[21][0]*1000.0 > -1.5 && proton_plus_pars[21][0]*1000.0 < 6.5)&&
+								(fabs(proton_plus_pars[21][1]*1000.0) > 7.0 && fabs(proton_plus_pars[21][1]*1000.0) < 29.0)&&
+								(proton_plus_pars[25][0]*1000.0 > -1.5 && proton_plus_pars[25][0]*1000.0 < 6.5)&&
+								(fabs(proton_plus_pars[25][1]*1000.0) > 7.0 && fabs(proton_plus_pars[25][1]*1000.0) < 29.0));}
+					// cout<<"RP fiducial combinations"<<endl
+
+					//Proton Plus side RP accept
 					proton_plus_rp_accept = (proton_pz_plus > 0.) && 
-						( ( proton_plus_rp_accept_020 && proton_plus_rp_accept_024 )|| 
-						  ( proton_plus_rp_accept_021 && proton_plus_rp_accept_025 )||
-						  ( proton_plus_rp_accept_022 && proton_plus_rp_accept_023 ));}//sdplus
-				if(sdminus){
+						( ( proton_plus_rp_accept_020 && proton_plus_rp_accept_024 && fiducial_plus_020024)|| 
+						  ( proton_plus_rp_accept_021 && proton_plus_rp_accept_025 && fiducial_plus_021025));}//sdplus
+					// check Eliza //  ( proton_plus_rp_accept_022 && proton_plus_rp_accept_023 ));}//sdplus
+
+					if(sdminus){
+						if( proton_minus_rp_accept_120 && proton_minus_rp_accept_124){
+							fiducial_minus_120124 = ((proton_minus_pars[120][0]*1000.0 > -1.5 && proton_minus_pars[120][0]*1000.0 < 6.5) &&
+									(proton_minus_pars[120][1]*1000.0 > 7.0 && proton_minus_pars[120][1]*1000.0 < 29.0) &&
+									(proton_minus_pars[124][0]*1000.0 > -1.5 && proton_minus_pars[124][0]*1000.0 < 6.5) &&
+									(proton_minus_pars[124][1]*1000.0 > 7.0 && proton_minus_pars[124][1]*1000.0 < 29.0));}
+						else if(( proton_minus_rp_accept_121 && proton_minus_rp_accept_125)){
+							fiducial_minus_121125 = ((proton_minus_pars[121][0]*1000.0 > -1.5 && proton_minus_pars[121][0]*1000.0 < 6.5)&&
+									(fabs(proton_minus_pars[121][1]*1000.0) > 7.0 && fabs(proton_minus_pars[121][1]*1000.0) < 29.0)&&
+									(proton_minus_pars[125][0]*1000.0 > -1.5 && proton_minus_pars[125][0]*1000.0 < 6.5)&&
+									(fabs(proton_minus_pars[125][1]*1000.0) > 7.0 && fabs(proton_minus_pars[125][1]*1000.0) < 29.0));}
+					}//sdminus
+
+
+
+
 					proton_minus_rp_accept = (proton_pz_minus < 0.) && 
-						( ( proton_minus_rp_accept_120 && proton_minus_rp_accept_124 )||
-						  ( proton_minus_rp_accept_121 && proton_minus_rp_accept_125 )||
-						  ( proton_minus_rp_accept_122 && proton_minus_rp_accept_123 ) );}//sdminus
+						( ( proton_minus_rp_accept_120 && proton_minus_rp_accept_124 && fiducial_minus_120124 )||
+						  ( proton_minus_rp_accept_121 && proton_minus_rp_accept_125 && fiducial_minus_121125 ));}
+					//			  ( proton_minus_rp_accept_122 && proton_minus_rp_accept_123 ) );}//sdminus
 
-				if(sdplus){
-					if( proton_plus_rp_accept ){
-						histosTH1F["xi_proton_plus_accepted"]->Fill( xi_proton_plus , event_weight );
-						histosTH1F["t_proton_plus_accepted"]->Fill( fabs(t_proton_plus) , event_weight ); 
-						histosTH2F["proton_plus_xi_vs_t_accepted"]->Fill( fabs(t_proton_plus) , xi_proton_plus , event_weight );
-						if(proton_plus_t_range){
-							histosTH1F["xi_proton_t_range_plus_accepted"]->Fill( xi_proton_plus , event_weight );
-							if(proton_plus_xi_range){
-								histosTH1F["t_proton_xi_range_plus_accepted"]->Fill( fabs(t_proton_plus) , event_weight );}
+					if(sdplus){
+						if( proton_plus_rp_accept ){
+							histosTH1F["xi_proton_plus_accepted"]->Fill( xi_proton_plus , event_weight );
+							histosTH1F["t_proton_plus_accepted"]->Fill( fabs(t_proton_plus) , event_weight ); 
+							histosTH2F["proton_plus_xi_vs_t_accepted"]->Fill( fabs(t_proton_plus) , xi_proton_plus , event_weight );
+							if(proton_plus_t_range){
+								histosTH1F["xi_proton_t_range_plus_accepted"]->Fill( xi_proton_plus , event_weight );
+								if(proton_plus_xi_range){
+									histosTH1F["t_proton_xi_range_plus_accepted"]->Fill( fabs(t_proton_plus) , event_weight );}
+							}
 						}
-					}
 
-				}//sdplus
-				if(sdminus){
-					if( proton_minus_rp_accept ){
-						histosTH1F["xi_proton_minus_accepted"]->Fill( xi_proton_minus , event_weight );
-						histosTH1F["t_proton_minus_accepted"]->Fill( fabs(t_proton_minus) , event_weight ); 
-						histosTH2F["proton_minus_xi_vs_t_accepted"]->Fill( fabs(t_proton_minus) , xi_proton_minus , event_weight );
+					}//sdplus
+					if(sdminus){
+						if( proton_minus_rp_accept ){
+							histosTH1F["xi_proton_minus_accepted"]->Fill( xi_proton_minus , event_weight );
+							histosTH1F["t_proton_minus_accepted"]->Fill( fabs(t_proton_minus) , event_weight ); 
+							histosTH2F["proton_minus_xi_vs_t_accepted"]->Fill( fabs(t_proton_minus) , xi_proton_minus , event_weight );
 
-						if(proton_minus_t_range){
-							histosTH1F["xi_proton_t_range_minus_accepted"]->Fill( xi_proton_minus , event_weight );
-							if(proton_minus_xi_range){
-								histosTH1F["t_proton_xi_range_minus_accepted"]->Fill( fabs(t_proton_minus) , event_weight );}
+							if(proton_minus_t_range){
+								histosTH1F["xi_proton_t_range_minus_accepted"]->Fill( xi_proton_minus , event_weight );
+								if(proton_minus_xi_range){
+									histosTH1F["t_proton_xi_range_minus_accepted"]->Fill( fabs(t_proton_minus) , event_weight );}
+							}
 						}
-					}
-				}//sdminus
-				// RP stations
-				if(sdplus){
-					if(proton_plus_rp_accept_020){
-						histosTH1F["xi_proton_plus_accepted_020"]->Fill( xi_proton_plus , event_weight );
-						histosTH1F["t_proton_plus_accepted_020"]->Fill( fabs(t_proton_plus) , event_weight ); 
-						histosTH1F["posx_proton_plus_accepted_020"]->Fill( proton_plus_pars[20][0] , event_weight );
-						histosTH1F["posy_proton_plus_accepted_020"]->Fill( proton_plus_pars[20][1] , event_weight );
-						histosTH2F["pos_y_vs_x_proton_plus_accepted_020"]->Fill( proton_plus_pars[20][0], proton_plus_pars[20][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_plus_accepted_020"]->Fill( proton_plus_pars[20][2], proton_plus_pars[20][3] , event_weight );
-					}
-					if(proton_plus_rp_accept_021){
-						histosTH1F["xi_proton_plus_accepted_021"]->Fill( xi_proton_plus , event_weight );
-						histosTH1F["t_proton_plus_accepted_021"]->Fill( fabs(t_proton_plus) , event_weight ); 
-						histosTH2F["pos_y_vs_x_proton_plus_accepted_021"]->Fill( proton_plus_pars[21][0], proton_plus_pars[21][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_plus_accepted_021"]->Fill( proton_plus_pars[21][2], proton_plus_pars[21][3] , event_weight );
-					}
-					if(proton_plus_rp_accept_022){
-						histosTH1F["xi_proton_plus_accepted_022"]->Fill( xi_proton_plus , event_weight );
-						histosTH1F["t_proton_plus_accepted_022"]->Fill( fabs(t_proton_plus) , event_weight ); 
-						histosTH2F["pos_y_vs_x_proton_plus_accepted_022"]->Fill( proton_plus_pars[22][0], proton_plus_pars[22][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_plus_accepted_022"]->Fill( proton_plus_pars[22][2], proton_plus_pars[22][3] , event_weight );
-					}
-					if(proton_plus_rp_accept_023){
-						histosTH1F["xi_proton_plus_accepted_023"]->Fill( xi_proton_plus , event_weight );
-						histosTH1F["t_proton_plus_accepted_023"]->Fill( fabs(t_proton_plus) , event_weight ); 
-						histosTH2F["pos_y_vs_x_proton_plus_accepted_023"]->Fill( proton_plus_pars[23][0], proton_plus_pars[23][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_plus_accepted_023"]->Fill( proton_plus_pars[23][2], proton_plus_pars[23][3] , event_weight );
-					}
-					if(proton_plus_rp_accept_024){
-						histosTH1F["xi_proton_plus_accepted_024"]->Fill( xi_proton_plus , event_weight );
-						histosTH1F["t_proton_plus_accepted_024"]->Fill( fabs(t_proton_plus) , event_weight ); 
-						histosTH2F["pos_y_vs_x_proton_plus_accepted_024"]->Fill( proton_plus_pars[24][0], proton_plus_pars[24][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_plus_accepted_024"]->Fill( proton_plus_pars[24][2], proton_plus_pars[24][3] , event_weight );
-					}
-					if(proton_plus_rp_accept_025){
-						histosTH1F["xi_proton_plus_accepted_025"]->Fill( xi_proton_plus , event_weight );
-						histosTH1F["t_proton_plus_accepted_025"]->Fill( fabs(t_proton_plus) , event_weight ); 
-						histosTH2F["pos_y_vs_x_proton_plus_accepted_025"]->Fill( proton_plus_pars[25][0], proton_plus_pars[25][1] , event_weight );
+					}//sdminus
+					// RP stations
+					if(sdplus){
+						if(proton_plus_rp_accept_020){
+							histosTH1F["xi_proton_plus_accepted_020"]->Fill( xi_proton_plus , event_weight );
+							histosTH1F["t_proton_plus_accepted_020"]->Fill( fabs(t_proton_plus) , event_weight ); 
+							histosTH1F["posx_proton_plus_accepted_020"]->Fill( proton_plus_pars[20][0] , event_weight );
+							histosTH1F["posy_proton_plus_accepted_020"]->Fill( proton_plus_pars[20][1] , event_weight );
+							histosTH2F["pos_y_vs_x_proton_plus_accepted_020"]->Fill( proton_plus_pars[20][0], proton_plus_pars[20][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_plus_accepted_020"]->Fill( proton_plus_pars[20][2], proton_plus_pars[20][3] , event_weight );
+						}
+						if(proton_plus_rp_accept_021){
+							histosTH1F["xi_proton_plus_accepted_021"]->Fill( xi_proton_plus , event_weight );
+							histosTH1F["t_proton_plus_accepted_021"]->Fill( fabs(t_proton_plus) , event_weight ); 
+							histosTH2F["pos_y_vs_x_proton_plus_accepted_021"]->Fill( proton_plus_pars[21][0], proton_plus_pars[21][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_plus_accepted_021"]->Fill( proton_plus_pars[21][2], proton_plus_pars[21][3] , event_weight );
+						}
+						if(proton_plus_rp_accept_022){
+							histosTH1F["xi_proton_plus_accepted_022"]->Fill( xi_proton_plus , event_weight );
+							histosTH1F["t_proton_plus_accepted_022"]->Fill( fabs(t_proton_plus) , event_weight ); 
+							histosTH2F["pos_y_vs_x_proton_plus_accepted_022"]->Fill( proton_plus_pars[22][0], proton_plus_pars[22][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_plus_accepted_022"]->Fill( proton_plus_pars[22][2], proton_plus_pars[22][3] , event_weight );
+						}
+						if(proton_plus_rp_accept_023){
+							histosTH1F["xi_proton_plus_accepted_023"]->Fill( xi_proton_plus , event_weight );
+							histosTH1F["t_proton_plus_accepted_023"]->Fill( fabs(t_proton_plus) , event_weight ); 
+							histosTH2F["pos_y_vs_x_proton_plus_accepted_023"]->Fill( proton_plus_pars[23][0], proton_plus_pars[23][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_plus_accepted_023"]->Fill( proton_plus_pars[23][2], proton_plus_pars[23][3] , event_weight );
+						}
+						if(proton_plus_rp_accept_024){
+							histosTH1F["xi_proton_plus_accepted_024"]->Fill( xi_proton_plus , event_weight );
+							histosTH1F["t_proton_plus_accepted_024"]->Fill( fabs(t_proton_plus) , event_weight ); 
+							histosTH2F["pos_y_vs_x_proton_plus_accepted_024"]->Fill( proton_plus_pars[24][0], proton_plus_pars[24][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_plus_accepted_024"]->Fill( proton_plus_pars[24][2], proton_plus_pars[24][3] , event_weight );
+						}
+						if(proton_plus_rp_accept_025){
+							histosTH1F["xi_proton_plus_accepted_025"]->Fill( xi_proton_plus , event_weight );
+							histosTH1F["t_proton_plus_accepted_025"]->Fill( fabs(t_proton_plus) , event_weight ); 
+							histosTH2F["pos_y_vs_x_proton_plus_accepted_025"]->Fill( proton_plus_pars[25][0], proton_plus_pars[25][1] , event_weight );
 
-						histosTH2F["pos_thy_vs_thx_proton_plus_accepted_025"]->Fill( proton_plus_pars[25][2], proton_plus_pars[25][3] , event_weight );
-					}
+							histosTH2F["pos_thy_vs_thx_proton_plus_accepted_025"]->Fill( proton_plus_pars[25][2], proton_plus_pars[25][3] , event_weight );
+						}
 
-					if(proton_plus_rp_accept_120){
-						histosTH1F["xi_proton_plus_accepted_120"]->Fill( xi_proton_plus , event_weight );
-						histosTH1F["t_proton_plus_accepted_120"]->Fill( fabs(t_proton_plus) , event_weight ); 
-					}
-				}//sdplus
-				if(sdminus){
-					if(proton_minus_rp_accept_120){
-						histosTH1F["xi_proton_minus_accepted_120"]->Fill( xi_proton_minus , event_weight );
-						histosTH1F["t_proton_minus_accepted_120"]->Fill( fabs(t_proton_minus) , event_weight ); 
-						histosTH1F["posx_proton_minus_accepted_120"]->Fill( proton_minus_pars[120][0] , event_weight );
-						histosTH1F["posy_proton_minus_accepted_120"]->Fill( proton_minus_pars[120][1] , event_weight );
-						histosTH2F["pos_y_vs_x_proton_minus_accepted_120"]->Fill( proton_minus_pars[120][0], proton_minus_pars[120][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_minus_accepted_120"]->Fill( proton_minus_pars[120][2], proton_minus_pars[120][3] , event_weight );
-					}
-					if(proton_minus_rp_accept_121){
-						histosTH2F["pos_y_vs_x_proton_minus_accepted_121"]->Fill( proton_minus_pars[121][0], proton_minus_pars[121][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_minus_accepted_121"]->Fill( proton_minus_pars[121][2], proton_minus_pars[121][3] , event_weight );
-					}
-					if(proton_minus_rp_accept_122){
-						histosTH2F["pos_y_vs_x_proton_minus_accepted_122"]->Fill( proton_minus_pars[122][0], proton_minus_pars[122][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_minus_accepted_122"]->Fill( proton_minus_pars[122][2], proton_minus_pars[122][3] , event_weight );
-					}
-					if(proton_minus_rp_accept_123){
-						histosTH2F["pos_y_vs_x_proton_minus_accepted_123"]->Fill( proton_minus_pars[123][0], proton_minus_pars[123][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_minus_accepted_123"]->Fill( proton_minus_pars[123][2], proton_minus_pars[123][3] , event_weight );
-					}
-					if(proton_minus_rp_accept_124){
-						histosTH2F["pos_y_vs_x_proton_minus_accepted_124"]->Fill( proton_minus_pars[124][0], proton_minus_pars[124][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_minus_accepted_124"]->Fill( proton_minus_pars[124][2], proton_minus_pars[124][3] , event_weight );
+						if(proton_plus_rp_accept_120){
+							histosTH1F["xi_proton_plus_accepted_120"]->Fill( xi_proton_plus , event_weight );
+							histosTH1F["t_proton_plus_accepted_120"]->Fill( fabs(t_proton_plus) , event_weight ); 
+						}
+					}//sdplus
+					if(sdminus){
+						if(proton_minus_rp_accept_120){
+							histosTH1F["xi_proton_minus_accepted_120"]->Fill( xi_proton_minus , event_weight );
+							histosTH1F["t_proton_minus_accepted_120"]->Fill( fabs(t_proton_minus) , event_weight ); 
+							histosTH1F["posx_proton_minus_accepted_120"]->Fill( proton_minus_pars[120][0] , event_weight );
+							histosTH1F["posy_proton_minus_accepted_120"]->Fill( proton_minus_pars[120][1] , event_weight );
+							histosTH2F["pos_y_vs_x_proton_minus_accepted_120"]->Fill( proton_minus_pars[120][0], proton_minus_pars[120][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_minus_accepted_120"]->Fill( proton_minus_pars[120][2], proton_minus_pars[120][3] , event_weight );
+						}
+						if(proton_minus_rp_accept_121){
+							histosTH2F["pos_y_vs_x_proton_minus_accepted_121"]->Fill( proton_minus_pars[121][0], proton_minus_pars[121][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_minus_accepted_121"]->Fill( proton_minus_pars[121][2], proton_minus_pars[121][3] , event_weight );
+						}
+						if(proton_minus_rp_accept_122){
+							histosTH2F["pos_y_vs_x_proton_minus_accepted_122"]->Fill( proton_minus_pars[122][0], proton_minus_pars[122][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_minus_accepted_122"]->Fill( proton_minus_pars[122][2], proton_minus_pars[122][3] , event_weight );
+						}
+						if(proton_minus_rp_accept_123){
+							histosTH2F["pos_y_vs_x_proton_minus_accepted_123"]->Fill( proton_minus_pars[123][0], proton_minus_pars[123][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_minus_accepted_123"]->Fill( proton_minus_pars[123][2], proton_minus_pars[123][3] , event_weight );
+						}
+						if(proton_minus_rp_accept_124){
+							histosTH2F["pos_y_vs_x_proton_minus_accepted_124"]->Fill( proton_minus_pars[124][0], proton_minus_pars[124][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_minus_accepted_124"]->Fill( proton_minus_pars[124][2], proton_minus_pars[124][3] , event_weight );
 
-					}
-					if(proton_minus_rp_accept_125){
-						histosTH2F["pos_y_vs_x_proton_minus_accepted_125"]->Fill( proton_minus_pars[125][0], proton_minus_pars[125][1] , event_weight );
-						histosTH2F["pos_thy_vs_thx_proton_minus_accepted_125"]->Fill( proton_minus_pars[125][2], proton_minus_pars[125][3] , event_weight );
-					}
+						}
+						if(proton_minus_rp_accept_125){
+							histosTH2F["pos_y_vs_x_proton_minus_accepted_125"]->Fill( proton_minus_pars[125][0], proton_minus_pars[125][1] , event_weight );
+							histosTH2F["pos_thy_vs_thx_proton_minus_accepted_125"]->Fill( proton_minus_pars[125][2], proton_minus_pars[125][3] , event_weight );
+						}
 
-					if(proton_minus_rp_accept_020){
-						histosTH1F["xi_proton_minus_accepted_020"]->Fill( xi_proton_minus , event_weight );
-						histosTH1F["t_proton_minus_accepted_020"]->Fill( fabs(t_proton_minus) , event_weight ); 
-					}
-				}//sdminus
-			}
-			if(verbose)cout<<"fim genpart"<<endl;
-			//-------------------------------------------------------------------------------------------------
+						if(proton_minus_rp_accept_020){
+							histosTH1F["xi_proton_minus_accepted_020"]->Fill( xi_proton_minus , event_weight );
+							histosTH1F["t_proton_minus_accepted_020"]->Fill( fabs(t_proton_minus) , event_weight ); 
+						}
+					}//sdminus
+}
+if(verbose)cout<<"fim genpart"<<endl;
+//-------------------------------------------------------------------------------------------------
 
-			// Muons variables
-			//int n_muon_selected = 0;
-			double chmu1 = 0.; double chmu2 = 0.;
-			double phimu1 = 0.; double ptmu1 = 0.;double etamu1 = 0.;double ymu1 = 0.;
-			double phimu2 = 0.; double ptmu2 = 0.;double etamu2 = 0.;double ymu2 = 0.;
-			double deltaphi = 0.; double deltaeta = 0.; double deltapt = 0.; double deltay = 0.; double Dphi = 0.;
-			double dimuon_mass = 0.; double dimuon_pt=0.; double dimuon_pt2=0.; double dimuon_eta =0.;
-			double dimuon_rapidity = 0.; double dy_mass = 0.; double dy_pt=0.;
-			double dy_pt2=0.; double dy_eta =0.; double dy_rapidity = 0.; //double dphidy = 0.;
-			// Muons
-			vector<MyMuon> muons_selected;
-			for(vector<MyMuon>::iterator it_muon = muon_coll->begin() ; it_muon != muon_coll->end() ; ++it_muon){
+// Muons variables
+//int n_muon_selected = 0;
+double chmu1 = 0.; double chmu2 = 0.;
+double phimu1 = 0.; double ptmu1 = 0.;double etamu1 = 0.;double ymu1 = 0.;
+double phimu2 = 0.; double ptmu2 = 0.;double etamu2 = 0.;double ymu2 = 0.;
+double deltaphi = 0.; double deltaeta = 0.; double deltapt = 0.; double deltay = 0.; double Dphi = 0.;
+double dimuon_mass = 0.; double dimuon_pt=0.; double dimuon_pt2=0.; double dimuon_eta =0.;
+double dimuon_rapidity = 0.; double dy_mass = 0.; double dy_pt=0.;
+double dy_pt2=0.; double dy_eta =0.; double dy_rapidity = 0.; //double dphidy = 0.;
+// Muons
+vector<MyMuon> muons_selected;
+for(vector<MyMuon>::iterator it_muon = muon_coll->begin() ; it_muon != muon_coll->end() ; ++it_muon){
 
-				if( !(it_muon->IsTrackerMuon || it_muon->IsGlobalMuon) ) continue;
+	if( !(it_muon->IsTrackerMuon || it_muon->IsGlobalMuon) ) continue;
 
-				MyTracks const& muon_innerTrack = it_muon->innerTrack;
-				bool muon_id = it_muon->TMOneStationAngTight &&
-					muon_innerTrack.chi2n < 1.8 &&
-					muon_innerTrack.nValidPixelHits > 0 &&
-					muon_innerTrack.vtxdxy[prim_vtx_id] < 3. &&
-					muon_innerTrack.vtxdz[prim_vtx_id] < 30.;
+	MyTracks const& muon_innerTrack = it_muon->innerTrack;
+	bool muon_id = it_muon->TMOneStationAngTight &&
+		muon_innerTrack.chi2n < 1.8 &&
+		muon_innerTrack.nValidPixelHits > 0 &&
+		muon_innerTrack.vtxdxy[prim_vtx_id] < 3. &&
+		muon_innerTrack.vtxdz[prim_vtx_id] < 30.;
 
-				//   bool pT_cut = it_muon->Pt()>3.0;//GeV
+	//   bool pT_cut = it_muon->Pt()>3.0;//GeV
 
-				if( !muon_id ) continue;
-				//	if( !pT_cut ) continue;
+	if( !muon_id ) continue;
+	//	if( !pT_cut ) continue;
 
-				++n_muon_selected;
+	++n_muon_selected;
 
-				histosTH1F["muon_pt"]->Fill( it_muon->Pt(), event_weight );
-				histosTH1F["muon_eta"]->Fill( it_muon->Eta(), event_weight );
-				histosTH1F["muon_phi"]->Fill( it_muon->Phi(), event_weight );
+	histosTH1F["muon_pt"]->Fill( it_muon->Pt(), event_weight );
+	histosTH1F["muon_eta"]->Fill( it_muon->Eta(), event_weight );
+	histosTH1F["muon_phi"]->Fill( it_muon->Phi(), event_weight );
 
-				muons_selected.push_back( *it_muon );
+	muons_selected.push_back( *it_muon );
 
-				histosTH1F["muon_multiplicity"]->Fill( n_muon_selected, event_weight );
-			}
-			bool select_Muons = ( muons_selected.size() >= 2 );
-			if(selectMuons && !select_Muons) continue;
-			histosTH1F["EventSelection"]->Fill( "Muons", event_weight );
-			if(verbose)cout<<"muons selected size (>=2) :"<<muons_selected.size()<<endl;
-			//----------------------------------------------------------------------------------------
-			// Muon pairs
-			for(vector<MyMuon>::iterator it_mu1 = muons_selected.begin() ;
-					it_mu1 != muons_selected.end() ; ++it_mu1){
+	histosTH1F["muon_multiplicity"]->Fill( n_muon_selected, event_weight );
+}
+bool select_Muons = ( muons_selected.size() >= 2 );
+if(selectMuons && !select_Muons) continue;
+histosTH1F["EventSelection"]->Fill( "Muons", event_weight );
+if(verbose)cout<<"muons selected size (>=2) :"<<muons_selected.size()<<endl;
+//----------------------------------------------------------------------------------------
+// Muon pairs
+for(vector<MyMuon>::iterator it_mu1 = muons_selected.begin() ;
+		it_mu1 != muons_selected.end() ; ++it_mu1){
 
-				histosTH1F["muon1_pt"]->Fill( it_mu1->Pt(), event_weight );
-				histosTH1F["muon1_eta"]->Fill( it_mu1->Eta(), event_weight );
-				histosTH1F["muon1_rapidity"]->Fill( it_mu1->Rapidity(), event_weight );
-				histosTH1F["muon1_phi"]->Fill(it_mu1->Phi(), event_weight );
-				//				phimu1 = it_mu1->Phi();  ptmu1 = it_mu1->Pt(); 
-				//				etamu1 = it_mu1->Eta(); ymu1 = it_mu1->Rapidity();
-				//				chmu1 = it_mu1->charge;
-				mu1_selected = true;
+	histosTH1F["muon1_pt"]->Fill( it_mu1->Pt(), event_weight );
+	histosTH1F["muon1_eta"]->Fill( it_mu1->Eta(), event_weight );
+	histosTH1F["muon1_rapidity"]->Fill( it_mu1->Rapidity(), event_weight );
+	histosTH1F["muon1_phi"]->Fill(it_mu1->Phi(), event_weight );
+	//				phimu1 = it_mu1->Phi();  ptmu1 = it_mu1->Pt(); 
+	//				etamu1 = it_mu1->Eta(); ymu1 = it_mu1->Rapidity();
+	//				chmu1 = it_mu1->charge;
+	mu1_selected = true;
 
-				for(vector<MyMuon>::iterator it_mu2 = muons_selected.begin() ;
-						it_mu2 != muons_selected.end() ; ++it_mu2){
-					bool os_muons = ( it_mu1->charge*it_mu2->charge < 0. );
-					if( !os_muons ) continue;
-					++n_dimuons_selected;
-					mu2_selected = true;
-					//cout<<"mu2_selected :"<<mu2_selected<<endl;
-					histosTH1F["muon2_pt"]->Fill( it_mu2->Pt(), event_weight );
-					histosTH1F["muon2_eta"]->Fill( it_mu2->Eta(), event_weight );
-					histosTH1F["muon2_rapidity"]->Fill( it_mu2->Rapidity(), event_weight );
-					histosTH1F["muon2_phi"]->Fill(it_mu2->Phi(), event_weight );
-					//					phimu2 = it_mu2->Phi(); ptmu2 = it_mu2->Pt();
-					//					etamu2 = it_mu2->Eta(); ymu2 = it_mu2->Rapidity();
-					//					chmu2 = it_mu2->charge;
+	for(vector<MyMuon>::iterator it_mu2 = muons_selected.begin() ;
+			it_mu2 != muons_selected.end() ; ++it_mu2){
+		bool os_muons = ( it_mu1->charge*it_mu2->charge < 0. );
+		if( !os_muons ) continue;
+		++n_dimuons_selected;
+		mu2_selected = true;
+		//cout<<"mu2_selected :"<<mu2_selected<<endl;
+		histosTH1F["muon2_pt"]->Fill( it_mu2->Pt(), event_weight );
+		histosTH1F["muon2_eta"]->Fill( it_mu2->Eta(), event_weight );
+		histosTH1F["muon2_rapidity"]->Fill( it_mu2->Rapidity(), event_weight );
+		histosTH1F["muon2_phi"]->Fill(it_mu2->Phi(), event_weight );
+		//					phimu2 = it_mu2->Phi(); ptmu2 = it_mu2->Pt();
+		//					etamu2 = it_mu2->Eta(); ymu2 = it_mu2->Rapidity();
+		//					chmu2 = it_mu2->charge;
 
-					//...
-					TLorentzVector& muon1_lorentz = *it_mu1;
-					TLorentzVector& muon2_lorentz = *it_mu2;
-
-
-					TLorentzVector dimuon_lorentz(0.,0.,0.,0.);
-					dimuon_lorentz += muon1_lorentz;
-					dimuon_lorentz += muon2_lorentz;
-					dimuon_pt=dimuon_lorentz.Pt();
-
-					// pT Dimuons selection
-					// bool dimuons_pt_cut = dimuon_pt >= 1.5;// GeV
-					//if( !dimuons_pt_cut ) continue;
-					//histosTH1F["dimuon_multiplicity"]->Fill(n_dimuons_selected, event_weight );
-					histosTH1F["dimuon_mass"]->Fill( dimuon_lorentz.M(), event_weight );
-					histosTH1F["dimuon_pt"]->Fill( dimuon_lorentz.Pt(), event_weight );
-					histosTH1F["dimuon_pt2"]->Fill( dimuon_lorentz.Pt()*dimuon_lorentz.Pt(), event_weight );
-					histosTH1F["dimuon_eta"]->Fill( dimuon_lorentz.Eta(), event_weight );
-					histosTH1F["dimuon_rapidity"]->Fill( dimuon_lorentz.Rapidity(), event_weight );
-					dimuon_mass = dimuon_lorentz.M();  
-					//dimuon_pt=dimuon_lorentz.Pt(); 
-					dimuon_pt2=dimuon_lorentz.Pt()*dimuon_lorentz.Pt(); 
-					dimuon_eta =dimuon_lorentz.Eta();
-					dimuon_rapidity = dimuon_lorentz.Rapidity();
-					//dphidy = dimuon_lorentz.Phi();
-					//cout<<"Delta Definitions :"<<endl;		
-					deltapt = fabs(muon1_lorentz.Pt() - muon2_lorentz.Pt());
-					deltaeta = fabs(muon1_lorentz.Eta() - muon2_lorentz.Eta());
-					deltaphi = fabs(phimu1 - phimu2);
-					if(deltaphi > M_PI)deltaphi = (2*M_PI - deltaphi);
-					deltay = fabs(muon1_lorentz.Rapidity() - muon2_lorentz.Rapidity());
-					//Dphi = std::fabs(deltaPhi(phimu1 ,phimu2));  
-					//cout<<"Delta Phi :"<<deltaphi<<endl;
-					histosTH1F["muonDeltaPt"]->Fill(deltapt, event_weight );
-					histosTH1F["muonDeltaEta"]->Fill(deltaeta, event_weight );	
-					histosTH1F["muonDeltaPhi"]->Fill(deltaphi, event_weight );
-					histosTH1F["muonDeltaY"]->Fill(deltay, event_weight ); 
-					histosTH2F["DeltaPhi_vs_dimuon_pt"]->Fill(dimuon_pt,deltaphi, event_weight ); 
-					//histosTH1F["muonDphi"]->Fill(Dphi, event_weight );
-					//histosTH1F["lorentzdphi"]->Fill(dphidy, event_weight );
-					//cout<<"mass_dimuon = "<< dimuon_lorentz.M() << endl;
-					////////////////////////////////////////////////////////////////////////////////////////////
-					//double Jpsi_mass = dimuon_lorentz.M();
-					//cout<<"dy_mass_dimuon = "<< Jpsi_mass << endl;                              
-					if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){
-						//						cout<<"dy_mass = "<< dimuon_mass << endl;
-						++n_dy_selected;
-						//double Dphi_dy = std::fabs(deltaPhi(phimu1 ,phimu2));
-						//histosTH1F["dy_multiplicity"]->Fill(n_dimuons_selected, event_weight );
-						histosTH1F["dy_mass"]->Fill( dimuon_lorentz.M(), event_weight );
-						histosTH1F["dy_pt"]->Fill( dimuon_lorentz.Pt(), event_weight );
-						histosTH1F["dy_pt2"]->Fill( (dimuon_lorentz.Pt()*dimuon_lorentz.Pt()), event_weight );
-						histosTH1F["dy_eta"]->Fill( dimuon_lorentz.Eta(), event_weight );
-						histosTH1F["dy_rapidity"]->Fill( dimuon_lorentz.Rapidity(), event_weight );
-						histosTH1F["muonDeltaPt_dy"]->Fill(deltapt, event_weight );
-						histosTH1F["muonDeltaEta_dy"]->Fill(deltaeta, event_weight );	
-						histosTH1F["muonDeltaPhi_dy"]->Fill(deltaphi, event_weight );
-						//histosTH1F["muonDphi_dy"]->Fill(Dphi, event_weight );
-						//histosTH1F["lorentzdphi_dy"]->Fill(dphidy, event_weight );
-						histosTH1F["muonDeltaY_dy"]->Fill(deltay, event_weight ); 
-						histosTH2F["dy_DeltaPhi_vs_dimuon_pt"]->Fill(dimuon_pt,deltaphi, event_weight );
-						dy_mass = dimuon_lorentz.M();  
-						dy_pt=dimuon_lorentz.Pt(); 
-						dy_pt2=dimuon_lorentz.Pt()*dimuon_lorentz.Pt(); 
-						dy_eta =dimuon_lorentz.Eta();
-						dy_rapidity = dimuon_lorentz.Rapidity();
-
-						//						  //Muon First                    
-						phimu1 = muon1_lorentz.Phi();  ptmu1 = muon1_lorentz.Pt();
-						etamu1 = muon1_lorentz.Eta(); ymu1 = muon1_lorentz.Rapidity();
-						//                                        cout<< "ptmu1: "<< ptmu1<< endl;
-
-						//chmu1 = it_mu1->charge;
-
-						// Muon 2
-						phimu2 = muon2_lorentz.Phi(); ptmu2 = muon2_lorentz.Pt();
-						etamu2 = muon2_lorentz.Eta(); ymu2 = muon2_lorentz.Rapidity();
-						//chmu2 = it_mu2->charge;	
-
-						//cout<<"finalizando dy mass cut"<<endl; 
-					}   
-					//cout<<"final do loop mass range"<<endl;
-				}
-			}
-			if(!mu2_selected)continue;
-
-			//-----------------------------------------------------------------------------------------
-			// Particle-flow
-			vector<MyPFCand> particles_sorted;
-			double etaEdgeLow = -999.0;
-			double etaEdgeHigh = 999.0;
-
-			double pfEPlusPz = 0.;
-			double pfEMinusPz = 0.;
-			double xiCorrFactor = 1.0;
+		//...
+		TLorentzVector& muon1_lorentz = *it_mu1;
+		TLorentzVector& muon2_lorentz = *it_mu2;
 
 
-			// Particle-flow
+		TLorentzVector dimuon_lorentz(0.,0.,0.,0.);
+		dimuon_lorentz += muon1_lorentz;
+		dimuon_lorentz += muon2_lorentz;
+		dimuon_pt=dimuon_lorentz.Pt();
+
+		// pT Dimuons selection
+		// bool dimuons_pt_cut = dimuon_pt >= 1.5;// GeV
+		//if( !dimuons_pt_cut ) continue;
+		//histosTH1F["dimuon_multiplicity"]->Fill(n_dimuons_selected, event_weight );
+		histosTH1F["dimuon_mass"]->Fill( dimuon_lorentz.M(), event_weight );
+		histosTH1F["dimuon_pt"]->Fill( dimuon_lorentz.Pt(), event_weight );
+		histosTH1F["dimuon_pt2"]->Fill( dimuon_lorentz.Pt()*dimuon_lorentz.Pt(), event_weight );
+		histosTH1F["dimuon_eta"]->Fill( dimuon_lorentz.Eta(), event_weight );
+		histosTH1F["dimuon_rapidity"]->Fill( dimuon_lorentz.Rapidity(), event_weight );
+		dimuon_mass = dimuon_lorentz.M();  
+		//dimuon_pt=dimuon_lorentz.Pt(); 
+		dimuon_pt2=dimuon_lorentz.Pt()*dimuon_lorentz.Pt(); 
+		dimuon_eta =dimuon_lorentz.Eta();
+		dimuon_rapidity = dimuon_lorentz.Rapidity();
+		//dphidy = dimuon_lorentz.Phi();
+		//cout<<"Delta Definitions :"<<endl;		
+		deltapt = fabs(muon1_lorentz.Pt() - muon2_lorentz.Pt());
+		deltaeta = fabs(muon1_lorentz.Eta() - muon2_lorentz.Eta());
+		deltaphi = fabs(phimu1 - phimu2);
+		if(deltaphi > M_PI)deltaphi = (2*M_PI - deltaphi);
+		deltay = fabs(muon1_lorentz.Rapidity() - muon2_lorentz.Rapidity());
+		//Dphi = std::fabs(deltaPhi(phimu1 ,phimu2));  
+		//cout<<"Delta Phi :"<<deltaphi<<endl;
+		histosTH1F["muonDeltaPt"]->Fill(deltapt, event_weight );
+		histosTH1F["muonDeltaEta"]->Fill(deltaeta, event_weight );	
+		histosTH1F["muonDeltaPhi"]->Fill(deltaphi, event_weight );
+		histosTH1F["muonDeltaY"]->Fill(deltay, event_weight ); 
+		histosTH2F["DeltaPhi_vs_dimuon_pt"]->Fill(dimuon_pt,deltaphi, event_weight ); 
+		//histosTH1F["muonDphi"]->Fill(Dphi, event_weight );
+		//histosTH1F["lorentzdphi"]->Fill(dphidy, event_weight );
+		//cout<<"mass_dimuon = "<< dimuon_lorentz.M() << endl;
+		////////////////////////////////////////////////////////////////////////////////////////////
+		//double Jpsi_mass = dimuon_lorentz.M();
+		//cout<<"dy_mass_dimuon = "<< Jpsi_mass << endl;                              
+		if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){
+			//						cout<<"dy_mass = "<< dimuon_mass << endl;
+			++n_dy_selected;
+			//double Dphi_dy = std::fabs(deltaPhi(phimu1 ,phimu2));
+			//histosTH1F["dy_multiplicity"]->Fill(n_dimuons_selected, event_weight );
+			histosTH1F["dy_mass"]->Fill( dimuon_lorentz.M(), event_weight );
+			histosTH1F["dy_pt"]->Fill( dimuon_lorentz.Pt(), event_weight );
+			histosTH1F["dy_pt2"]->Fill( (dimuon_lorentz.Pt()*dimuon_lorentz.Pt()), event_weight );
+			histosTH1F["dy_eta"]->Fill( dimuon_lorentz.Eta(), event_weight );
+			histosTH1F["dy_rapidity"]->Fill( dimuon_lorentz.Rapidity(), event_weight );
+			histosTH1F["muonDeltaPt_dy"]->Fill(deltapt, event_weight );
+			histosTH1F["muonDeltaEta_dy"]->Fill(deltaeta, event_weight );	
+			histosTH1F["muonDeltaPhi_dy"]->Fill(deltaphi, event_weight );
+			//histosTH1F["muonDphi_dy"]->Fill(Dphi, event_weight );
+			//histosTH1F["lorentzdphi_dy"]->Fill(dphidy, event_weight );
+			histosTH1F["muonDeltaY_dy"]->Fill(deltay, event_weight ); 
+			histosTH2F["dy_DeltaPhi_vs_dimuon_pt"]->Fill(dimuon_pt,deltaphi, event_weight );
+			dy_mass = dimuon_lorentz.M();  
+			dy_pt=dimuon_lorentz.Pt(); 
+			dy_pt2=dimuon_lorentz.Pt()*dimuon_lorentz.Pt(); 
+			dy_eta =dimuon_lorentz.Eta();
+			dy_rapidity = dimuon_lorentz.Rapidity();
+
+			//						  //Muon First                    
+			phimu1 = muon1_lorentz.Phi();  ptmu1 = muon1_lorentz.Pt();
+			etamu1 = muon1_lorentz.Eta(); ymu1 = muon1_lorentz.Rapidity();
+			//                                        cout<< "ptmu1: "<< ptmu1<< endl;
+
+			//chmu1 = it_mu1->charge;
+
+			// Muon 2
+			phimu2 = muon2_lorentz.Phi(); ptmu2 = muon2_lorentz.Pt();
+			etamu2 = muon2_lorentz.Eta(); ymu2 = muon2_lorentz.Rapidity();
+			//chmu2 = it_mu2->charge;	
+
+			//cout<<"finalizando dy mass cut"<<endl; 
+		}   
+		//cout<<"final do loop mass range"<<endl;
+	}
+}
+if(!mu2_selected)continue;
+
+//-----------------------------------------------------------------------------------------
+// Particle-flow
+vector<MyPFCand> particles_sorted;
+double etaEdgeLow = -999.0;
+double etaEdgeHigh = 999.0;
+
+double pfEPlusPz = 0.;
+double pfEMinusPz = 0.;
+double xiCorrFactor = 1.0;
 
 
-			for(vector<MyPFCand>::iterator it_pfcand = pFlow_coll->begin();
-					it_pfcand != pFlow_coll->end(); ++it_pfcand){
-				//int partType = it_pfcand->particleId;
-				double eta = it_pfcand->Eta();
-				double energy = it_pfcand->Energy();
-				double pz = it_pfcand->Pz();
-
-				// Apply thresholds
-				if( !pflowThreshold(*it_pfcand,thresholdsPFlow) ) continue;
-
-				if( eta >= etaEdgeLow && eta <= etaEdgeHigh ) particles_sorted.push_back(*it_pfcand);
-				pfEPlusPz  += energy + pz;
-				pfEMinusPz += energy - pz;
-			}
-			// Xi (CMS)
-			double pfXiPlusReco = xiCorrFactor*pfEPlusPz/8000.;
-			double pfXiMinusReco = xiCorrFactor*pfEMinusPz/8000.;
-			histosTH1F["xi_cms_pfplus"]->Fill(pfXiPlusReco,event_weight);
-			double xi_cms_plus = histosTH1F["xi_cms_pfplus"]->GetRandom(); 
-			histosTH1F["random_xi_cms_plus"]->Fill(xi_cms_plus,event_weight); 
-
-			histosTH1F["xi_cms_pfminus"]->Fill(pfXiMinusReco,event_weight);
-			double xi_cms_minus = histosTH1F["xi_cms_pfminus"]->GetRandom(); 
-			histosTH1F["random_xi_cms_minus"]->Fill(xi_cms_minus,event_weight); 
-
-			// Find eta_min & eta_max
-			double pfEtaMin = -999.;
-			double pfEtaMax = 999.;
-			if( particles_sorted.size() > 0 ){
-				std::stable_sort(particles_sorted.begin(), particles_sorted.end(), sortByEta);
-				pfEtaMin = particles_sorted.at(0).Eta();
-				pfEtaMax = particles_sorted.at(particles_sorted.size() - 1).Eta();
-			}
-
-			//if( selectEtaMax && (pfEtaMax > 3.0) ) continue;
-			////if( selectEtaMax && (pfEtaMax > etaMaxThreshold) ) continue;
-			histosTH1F["EventSelection"]->Fill( "EtaMax", event_weight );
-
-			//if( selectEtaMin && (pfEtaMin < -3.0) ) continue;
-			////if( selectEtaMin && (pfEtaMin < -etaMaxThreshold) ) continue;
-			histosTH1F["EventSelection"]->Fill( "EtaMin", event_weight );
-
-			// TOTEM T2
-			int n_t2_tracks_selected = 0;
-			int n_t2_tracks_selected_zplus = 0;
-			int n_t2_tracks_selected_zminus = 0;
-			if(!isMC){
-				vector<double> const& t2_trk_entryX = t2_event->TrkEntryX;
-				vector<double> const& t2_trk_entryY = t2_event->TrkEntryY;
-				vector<double> const& t2_trk_entryZ =  t2_event->TrkEntryZ;
-				vector<double> const& t2_trk_chiProb =  t2_event->TrkChiProb;
-
-				size_t n_t2_tracks = t2_trk_chiProb.size();
-				for(size_t i_t2_trk = 0; i_t2_trk < n_t2_tracks; ++i_t2_trk){
-					double trk_entryZ = t2_trk_entryZ[i_t2_trk];
-					int zside = ( trk_entryZ >= 0. ) ? 1 : -1;
-					if( zside > 0 )
-						histosTH1F["t2_track_chi2Prob_zplus"]->Fill( t2_trk_chiProb[i_t2_trk], event_weight );
-					else
-						histosTH1F["t2_track_chi2Prob_zminus"]->Fill( t2_trk_chiProb[i_t2_trk], event_weight );
-
-					// Select tracks
-					if( t2_trk_chiProb[i_t2_trk] < 0.2 ) continue;
-
-					++n_t2_tracks_selected;
-					if( zside > 0 ) ++n_t2_tracks_selected_zplus;
-					else            ++n_t2_tracks_selected_zminus;
-
-					if( zside > 0 ){
-						histosTH1F["t2_track_entryX_zplus"]->Fill( t2_trk_entryX[i_t2_trk], event_weight );
-						histosTH1F["t2_track_entryY_zplus"]->Fill( t2_trk_entryY[i_t2_trk], event_weight );
-						histosTH2F["t2_track_entryY_vs_entryX_zplus"]->Fill( t2_trk_entryX[i_t2_trk], t2_trk_entryY[i_t2_trk], event_weight );
-					} else{
-						histosTH1F["t2_track_entryX_zminus"]->Fill( t2_trk_entryX[i_t2_trk], event_weight );
-						histosTH1F["t2_track_entryY_zminus"]->Fill( t2_trk_entryY[i_t2_trk], event_weight );
-						histosTH2F["t2_track_entryY_vs_entryX_zminus"]->Fill( t2_trk_entryX[i_t2_trk], t2_trk_entryY[i_t2_trk], event_weight );
-					}
-				}
-
-				if( selectZeroHitsT2Plus && (n_t2_tracks_selected_zplus > 0) ) continue;
-				histosTH1F["EventSelection"]->Fill( "ZeroHitsT2Plus", event_weight );
-
-				if( selectZeroHitsT2Minus && (n_t2_tracks_selected_zminus > 0) ) continue;
-				histosTH1F["EventSelection"]->Fill( "ZeroHitsT2Minus", event_weight );
-			}
-
-			bool proton_right_valid = false;
-			bool proton_left_valid = false;
-			//=============================================================================
-			if(!isMC){
-				if(verbose)cout<<"1697- before to select the proton"<<endl;
-				proton_right_valid = rec_proton_right->valid;
-				proton_left_valid = rec_proton_left->valid;
-				bool double_arm_rec_proton = (proton_right_valid && proton_left_valid);
-				bool single_arm_rec_proton = (proton_right_valid || proton_left_valid) && !double_arm_rec_proton;
-				//bool single_arm_rec_proton = !double_arm_rec_proton;                        
+// Particle-flow
 
 
-				if( selectSingleArmRecProton && !single_arm_rec_proton ) continue;
-				histosTH1F["EventSelection"]->Fill( "SingleArmRP", event_weight );
+for(vector<MyPFCand>::iterator it_pfcand = pFlow_coll->begin();
+		it_pfcand != pFlow_coll->end(); ++it_pfcand){
+	//int partType = it_pfcand->particleId;
+	double eta = it_pfcand->Eta();
+	double energy = it_pfcand->Energy();
+	double pz = it_pfcand->Pz();
 
-				if( selectDoubleArmRecProton && !double_arm_rec_proton ) continue;
-				histosTH1F["EventSelection"]->Fill( "DoubleArmRP", event_weight );
+	// Apply thresholds
+	if( !pflowThreshold(*it_pfcand,thresholdsPFlow) ) continue;
 
-				bool tag_elastic_top45_bot56 = elastic_top45_bot56(rp_track_info);      
-				bool tag_elastic_bot45_top56 = elastic_bot45_top56(rp_track_info);      
-				if( selectElastic && !(tag_elastic_top45_bot56 || tag_elastic_bot45_top56) ) continue;
-				histosTH1F["EventSelection"]->Fill( "Elastic", event_weight );
+	if( eta >= etaEdgeLow && eta <= etaEdgeHigh ) particles_sorted.push_back(*it_pfcand);
+	pfEPlusPz  += energy + pz;
+	pfEMinusPz += energy - pz;
+}
+// Xi (CMS)
+double pfXiPlusReco = xiCorrFactor*pfEPlusPz/8000.;
+double pfXiMinusReco = xiCorrFactor*pfEMinusPz/8000.;
+histosTH1F["xi_cms_pfplus"]->Fill(pfXiPlusReco,event_weight);
+double xi_cms_plus = histosTH1F["xi_cms_pfplus"]->GetRandom(); 
+histosTH1F["random_xi_cms_plus"]->Fill(xi_cms_plus,event_weight); 
 
-				if( selectNonElastic && (tag_elastic_top45_bot56 || tag_elastic_bot45_top56) ) continue;
-				histosTH1F["EventSelection"]->Fill( "NonElastic", event_weight );
-				//} 
-				/*else if(isMC){
-				  if( selectRPPlusAccept && !proton_plus_rp_accept ) continue;
-				  histosTH1F["EventSelection"]->Fill( "MCRPPlusAccept", event_weight );
+histosTH1F["xi_cms_pfminus"]->Fill(pfXiMinusReco,event_weight);
+double xi_cms_minus = histosTH1F["xi_cms_pfminus"]->GetRandom(); 
+histosTH1F["random_xi_cms_minus"]->Fill(xi_cms_minus,event_weight); 
 
-				  if( selectRPMinusAccept && !proton_minus_rp_accept ) continue;
-				  histosTH1F["EventSelection"]->Fill( "MCRPMinusAccept", event_weight );
-				  }*/
+// Find eta_min & eta_max
+double pfEtaMin = -999.;
+double pfEtaMax = 999.;
+if( particles_sorted.size() > 0 ){
+	std::stable_sort(particles_sorted.begin(), particles_sorted.end(), sortByEta);
+	pfEtaMin = particles_sorted.at(0).Eta();
+	pfEtaMax = particles_sorted.at(particles_sorted.size() - 1).Eta();
+}
 
+//if( selectEtaMax && (pfEtaMax > 3.0) ) continue;
+////if( selectEtaMax && (pfEtaMax > etaMaxThreshold) ) continue;
+histosTH1F["EventSelection"]->Fill( "EtaMax", event_weight );
 
-				// RP protons
-				//if(!isMC){
-				if(verbose)cout<<"1876-RP_track_info"<<endl;
-				RPRootDumpTrackInfo* rp_track_info_020 = rp_track_info[20];
-				RPRootDumpTrackInfo* rp_track_info_021 = rp_track_info[21];
-				RPRootDumpTrackInfo* rp_track_info_022 = rp_track_info[22];
-				RPRootDumpTrackInfo* rp_track_info_023 = rp_track_info[23];
-				RPRootDumpTrackInfo* rp_track_info_024 = rp_track_info[24];
-				RPRootDumpTrackInfo* rp_track_info_025 = rp_track_info[25];
-				if(verbose)cout<<"RP_track_info left"<<endl;
-				RPRootDumpTrackInfo* rp_track_info_120 = rp_track_info[120];
-				RPRootDumpTrackInfo* rp_track_info_121 = rp_track_info[121];
-				RPRootDumpTrackInfo* rp_track_info_122 = rp_track_info[122];
-				RPRootDumpTrackInfo* rp_track_info_123 = rp_track_info[123];
-				RPRootDumpTrackInfo* rp_track_info_124 = rp_track_info[124];
-				RPRootDumpTrackInfo* rp_track_info_125 = rp_track_info[125];
-				if(verbose)cout<<"RP_track_info right"<<endl;
-				double xi_left = rec_proton_left->xi;                       
-				double xi_right = rec_proton_right->xi;
-				double deltax020024 = 0.;
-				double deltax120124 = 0.;
-				double deltay020024 = 0.;
-				double deltay120124 = 0.;
+//if( selectEtaMin && (pfEtaMin < -3.0) ) continue;
+////if( selectEtaMin && (pfEtaMin < -etaMaxThreshold) ) continue;
+histosTH1F["EventSelection"]->Fill( "EtaMin", event_weight );
 
-				bool rp_track_valid_020 = rp_track_info_020->valid && proton_left_valid;
-				if( rp_track_valid_020 ){
-					double rp_track_posx_020 = rp_track_info_020->x;
-					double rp_track_posy_020 = rp_track_info_020->y;
-					histosTH1F["rp_track_posx_020"]->Fill( rp_track_posx_020, event_weight );
-					histosTH1F["rp_track_posy_020"]->Fill( rp_track_posy_020, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_020"]->Fill( rp_track_posx_020, rp_track_posy_020, event_weight );
-					histosTH2F["proton_left_xi_vs_rp_track_posx_020"]->Fill( rp_track_posx_020, xi_left, event_weight );
-					if(verbose)cout<<"RP_track_info 020"<<endl;
+// TOTEM T2
+int n_t2_tracks_selected = 0;
+int n_t2_tracks_selected_zplus = 0;
+int n_t2_tracks_selected_zminus = 0;
+if(!isMC){
+	vector<double> const& t2_trk_entryX = t2_event->TrkEntryX;
+	vector<double> const& t2_trk_entryY = t2_event->TrkEntryY;
+	vector<double> const& t2_trk_entryZ =  t2_event->TrkEntryZ;
+	vector<double> const& t2_trk_chiProb =  t2_event->TrkChiProb;
 
-				}
-				bool rp_track_valid_021 = rp_track_info_021->valid && proton_left_valid;
-				if( rp_track_valid_021 ){
-					double rp_track_posx_021 = rp_track_info_021->x;
-					double rp_track_posy_021 = rp_track_info_021->y;
-					histosTH1F["rp_track_posx_021"]->Fill( rp_track_posx_021, event_weight );
-					histosTH1F["rp_track_posy_021"]->Fill( rp_track_posy_021, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_021"]->Fill( rp_track_posx_021, rp_track_posy_021, event_weight );
-					histosTH2F["proton_left_xi_vs_rp_track_posx_021"]->Fill( rp_track_posx_021, xi_left, event_weight );
-					if(verbose)cout<<"RP_track_info 021"<<endl;
-				}
-				bool rp_track_valid_022 = rp_track_info_022->valid && proton_left_valid;
-				if( rp_track_valid_022 ){
-					double rp_track_posx_022 = rp_track_info_022->x;
-					double rp_track_posy_022 = rp_track_info_022->y;
-					histosTH1F["rp_track_posx_022"]->Fill( rp_track_posx_022, event_weight );
-					histosTH1F["rp_track_posy_022"]->Fill( rp_track_posy_022, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_022"]->Fill( rp_track_posx_022, rp_track_posy_022, event_weight );
-					histosTH2F["proton_left_xi_vs_rp_track_posx_022"]->Fill( rp_track_posx_022, xi_left, event_weight );
-					if(verbose)cout<<"RP_track_info 022"<<endl;
-				}
-				bool rp_track_valid_023 = rp_track_info_023->valid && proton_left_valid;
-				if( rp_track_valid_023 ){
-					double rp_track_posx_023 = rp_track_info_023->x;
-					double rp_track_posy_023 = rp_track_info_023->y;
-					histosTH1F["rp_track_posx_023"]->Fill( rp_track_posx_023, event_weight );
-					histosTH1F["rp_track_posy_023"]->Fill( rp_track_posy_023, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_023"]->Fill( rp_track_posx_023, rp_track_posy_023, event_weight );
-					histosTH2F["proton_left_xi_vs_rp_track_posx_023"]->Fill( rp_track_posx_023, xi_left, event_weight );
-					if(verbose)cout<<"RP_track_info 023"<<endl;
-				}
-				bool rp_track_valid_024 = rp_track_info_024->valid && proton_left_valid;
-				//double xi_left = rec_proton_left->xi;
-				if( rp_track_valid_024 ){
-					double rp_track_posx_024 = rp_track_info_024->x;
-					double rp_track_posy_024 = rp_track_info_024->y;
-					histosTH1F["rp_track_posx_024"]->Fill( rp_track_posx_024, event_weight );
-					histosTH1F["rp_track_posy_024"]->Fill( rp_track_posy_024, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_024"]->Fill( rp_track_posx_024, rp_track_posy_024, event_weight );
-					histosTH2F["proton_left_xi_vs_rp_track_posx_024"]->Fill( rp_track_posx_024, xi_left, event_weight );
-					deltay020024 = ( rp_track_info_020->y -  rp_track_info_024->y);
-					deltax020024 = ( rp_track_info_020->x -  rp_track_info_024->x);
-					histosTH2F["Deltaxleft_x020x024_vs_posx_020"]->Fill( deltax020024,  rp_track_info_020->x, event_weight );
-					histosTH2F["Deltayleft_y020y024_vs_posy_020"]->Fill( deltay020024,  rp_track_info_020->y, event_weight );
-					if(verbose)cout<<"RP_track_info deltax020024"<<endl;
-					if(verbose)cout<<"RP_track_info 024"<<endl;
-				}
-				bool rp_track_valid_025 = rp_track_info_025->valid && proton_left_valid;
-				if( rp_track_valid_025 ){
-					double rp_track_posx_025 = rp_track_info_025->x;
-					double rp_track_posy_025 = rp_track_info_025->y;
-					histosTH1F["rp_track_posx_025"]->Fill( rp_track_posx_025, event_weight );
-					histosTH1F["rp_track_posy_025"]->Fill( rp_track_posy_025, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_025"]->Fill( rp_track_posx_025, rp_track_posy_025, event_weight );
-					histosTH2F["proton_left_xi_vs_rp_track_posx_025"]->Fill( rp_track_posx_025, xi_left, event_weight );
-					if(verbose)cout<<"RP_track_info 025"<<endl;
-				}
+	size_t n_t2_tracks = t2_trk_chiProb.size();
+	for(size_t i_t2_trk = 0; i_t2_trk < n_t2_tracks; ++i_t2_trk){
+		double trk_entryZ = t2_trk_entryZ[i_t2_trk];
+		int zside = ( trk_entryZ >= 0. ) ? 1 : -1;
+		if( zside > 0 )
+			histosTH1F["t2_track_chi2Prob_zplus"]->Fill( t2_trk_chiProb[i_t2_trk], event_weight );
+		else
+			histosTH1F["t2_track_chi2Prob_zminus"]->Fill( t2_trk_chiProb[i_t2_trk], event_weight );
 
-				bool rp_track_valid_120 = rp_track_info_120->valid && proton_right_valid;
-				if( rp_track_valid_120 ){
-					double rp_track_posx_120 = rp_track_info_120->x;
-					double rp_track_posy_120 = rp_track_info_120->y;
-					histosTH1F["rp_track_posx_120"]->Fill( rp_track_posx_120, event_weight );
-					histosTH1F["rp_track_posy_120"]->Fill( rp_track_posy_120, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_120"]->Fill( rp_track_posx_120, rp_track_posy_120, event_weight );
-					histosTH2F["proton_right_xi_vs_rp_track_posx_120"]->Fill( rp_track_posx_120, xi_right, event_weight );
-					if(verbose)cout<<"RP_track_info 120"<<endl;
-				}
-				bool rp_track_valid_121 = rp_track_info_121->valid && proton_right_valid;
-				if( rp_track_valid_121 ){
-					double rp_track_posx_121 = rp_track_info_121->x;
-					double rp_track_posy_121 = rp_track_info_121->y;
-					histosTH1F["rp_track_posx_121"]->Fill( rp_track_posx_121, event_weight );
-					histosTH1F["rp_track_posy_121"]->Fill( rp_track_posy_121, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_121"]->Fill( rp_track_posx_121, rp_track_posy_121, event_weight );
-					histosTH2F["proton_right_xi_vs_rp_track_posx_121"]->Fill( rp_track_posx_121, xi_right, event_weight );
-					if(verbose)cout<<"RP_track_info 121"<<endl;
-				}
-				bool rp_track_valid_122 = rp_track_info_122->valid && proton_right_valid;
-				if( rp_track_valid_122 ){
-					double rp_track_posx_122 = rp_track_info_122->x;
-					double rp_track_posy_122 = rp_track_info_122->y;
-					histosTH1F["rp_track_posx_122"]->Fill( rp_track_posx_122, event_weight );
-					histosTH1F["rp_track_posy_122"]->Fill( rp_track_posy_122, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_122"]->Fill( rp_track_posx_122, rp_track_posy_122, event_weight );
-					histosTH2F["proton_right_xi_vs_rp_track_posx_122"]->Fill( rp_track_posx_122, xi_right, event_weight );
-					if(verbose)cout<<"RP_track_info 122"<<endl;
-				}
-				bool rp_track_valid_123 = rp_track_info_123->valid && proton_right_valid;
-				if( rp_track_valid_123 ){
-					double rp_track_posx_123 = rp_track_info_123->x;
-					double rp_track_posy_123 = rp_track_info_123->y;
-					histosTH1F["rp_track_posx_123"]->Fill( rp_track_posx_123, event_weight );
-					histosTH1F["rp_track_posy_123"]->Fill( rp_track_posy_123, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_123"]->Fill( rp_track_posx_123, rp_track_posy_123, event_weight );
-					histosTH2F["proton_right_xi_vs_rp_track_posx_123"]->Fill( rp_track_posx_123, xi_right, event_weight );
-					if(verbose)cout<<"RP_track_info 123"<<endl;
-				}
-				bool rp_track_valid_124 = rp_track_info_124->valid && proton_right_valid;
-				//double xi_right = rec_proton_right->xi;
-				if( rp_track_valid_124 ){
-					double rp_track_posx_124 = rp_track_info_124->x;
-					double rp_track_posy_124 = rp_track_info_124->y;
-					histosTH1F["rp_track_posx_124"]->Fill( rp_track_posx_124, event_weight );
-					histosTH1F["rp_track_posy_124"]->Fill( rp_track_posy_124, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_124"]->Fill( rp_track_posx_124, rp_track_posy_124, event_weight );
-					histosTH2F["proton_right_xi_vs_rp_track_posx_124"]->Fill( rp_track_posx_124, xi_right, event_weight );
-					deltax120124 = ( rp_track_info_120->x - rp_track_posx_124);
-					deltay120124 = ( rp_track_info_120->y - rp_track_posy_124);
-					histosTH2F["Deltaxright_x120x124_vs_posx_120"]->Fill( deltax120124,rp_track_info_120->x, event_weight );
-					histosTH2F["Deltayright_y120y124_vs_posy_120"]->Fill( deltay120124,rp_track_info_120->y, event_weight );
-					if(verbose)cout<<"RP_track_info 124"<<endl;
-				}
-				bool rp_track_valid_125 = rp_track_info_125->valid && proton_right_valid;
-				if( rp_track_valid_125 ){
-					double rp_track_posx_125 = rp_track_info_125->x;
-					double rp_track_posy_125 = rp_track_info_125->y;
-					histosTH1F["rp_track_posx_125"]->Fill( rp_track_posx_125, event_weight );
-					histosTH1F["rp_track_posy_125"]->Fill( rp_track_posy_125, event_weight );
-					histosTH2F["rp_track_pos_y_vs_x_125"]->Fill( rp_track_posx_125, rp_track_posy_125, event_weight );
-					histosTH2F["proton_right_xi_vs_rp_track_posx_125"]->Fill( rp_track_posx_125, xi_right, event_weight );
-					if(verbose)cout<<"RP_track_info 125"<<endl;
-				}
+		// Select tracks
+		if( t2_trk_chiProb[i_t2_trk] < 0.2 ) continue;
+
+		++n_t2_tracks_selected;
+		if( zside > 0 ) ++n_t2_tracks_selected_zplus;
+		else            ++n_t2_tracks_selected_zminus;
+
+		if( zside > 0 ){
+			histosTH1F["t2_track_entryX_zplus"]->Fill( t2_trk_entryX[i_t2_trk], event_weight );
+			histosTH1F["t2_track_entryY_zplus"]->Fill( t2_trk_entryY[i_t2_trk], event_weight );
+			histosTH2F["t2_track_entryY_vs_entryX_zplus"]->Fill( t2_trk_entryX[i_t2_trk], t2_trk_entryY[i_t2_trk], event_weight );
+		} else{
+			histosTH1F["t2_track_entryX_zminus"]->Fill( t2_trk_entryX[i_t2_trk], event_weight );
+			histosTH1F["t2_track_entryY_zminus"]->Fill( t2_trk_entryY[i_t2_trk], event_weight );
+			histosTH2F["t2_track_entryY_vs_entryX_zminus"]->Fill( t2_trk_entryX[i_t2_trk], t2_trk_entryY[i_t2_trk], event_weight );
+		}
+	}
+
+	if( selectZeroHitsT2Plus && (n_t2_tracks_selected_zplus > 0) ) continue;
+	histosTH1F["EventSelection"]->Fill( "ZeroHitsT2Plus", event_weight );
+
+	if( selectZeroHitsT2Minus && (n_t2_tracks_selected_zminus > 0) ) continue;
+	histosTH1F["EventSelection"]->Fill( "ZeroHitsT2Minus", event_weight );
+}
+
+bool proton_right_valid = false;
+bool proton_left_valid = false;
+//=============================================================================
+if(!isMC){
+	if(verbose)cout<<"1697- before to select the proton"<<endl;
+	proton_right_valid = rec_proton_right->valid;
+	proton_left_valid = rec_proton_left->valid;
+	bool double_arm_rec_proton = (proton_right_valid && proton_left_valid);
+	bool single_arm_rec_proton = (proton_right_valid || proton_left_valid) && !double_arm_rec_proton;
+	//bool single_arm_rec_proton = !double_arm_rec_proton;                        
 
 
-				double xi_totem_right_cut;
-				double chi2_proton_right = rec_proton_right->chi2;
-				//double chindf_proton_right = rec_proton_right->chindf;
-				double xi_proton_right = rec_proton_right->xi;
-				double t_proton_right = rec_proton_right->t;
-				//bool good_proton_right = proton_right_valid && (chi2_proton_right/chindf_proton_right > 1);
-				//bool good_proton_right = proton_right_valid && ((-0.23 < xi_proton_right)&&( xi_proton_right < 0.04));   ; //&& ((-0.04 < xi_proton_right)&&( xi_proton_right < 0.23));
-				bool good_proton_right = proton_right_valid;
-				bool select_proton_minus = false;
+	if( selectSingleArmRecProton && !single_arm_rec_proton ) continue;
+	histosTH1F["EventSelection"]->Fill( "SingleArmRP", event_weight );
+
+	if( selectDoubleArmRecProton && !double_arm_rec_proton ) continue;
+	histosTH1F["EventSelection"]->Fill( "DoubleArmRP", event_weight );
+
+	bool tag_elastic_top45_bot56 = elastic_top45_bot56(rp_track_info);      
+	bool tag_elastic_bot45_top56 = elastic_bot45_top56(rp_track_info);      
+	if( selectElastic && !(tag_elastic_top45_bot56 || tag_elastic_bot45_top56) ) continue;
+	histosTH1F["EventSelection"]->Fill( "Elastic", event_weight );
+
+	if( selectNonElastic && (tag_elastic_top45_bot56 || tag_elastic_bot45_top56) ) continue;
+	histosTH1F["EventSelection"]->Fill( "NonElastic", event_weight );
+	//} 
+	/*else if(isMC){
+	  if( selectRPPlusAccept && !proton_plus_rp_accept ) continue;
+	  histosTH1F["EventSelection"]->Fill( "MCRPPlusAccept", event_weight );
+
+	  if( selectRPMinusAccept && !proton_minus_rp_accept ) continue;
+	  histosTH1F["EventSelection"]->Fill( "MCRPMinusAccept", event_weight );
+	  }*/
 
 
-				if( good_proton_right ){
-					if(verbose)cout<<"2033-good proton rigth"<<endl;
-					//double t_proton_right = rec_proton_right->t;
-					histosTH1F["proton_right_chi2"]->Fill( chi2_proton_right, event_weight );
-					histosTH1F["proton_right_xi"]->Fill(- xi_proton_right, event_weight );
-					histosTH1F["proton_right_t"]->Fill( -t_proton_right, event_weight );
-					//histosTH2F["proton_right_xi_vs_rp_track_posx_124"]->Fill( rp_track_posx_124, xi_proton_right, event_weight );
-					histosTH2F["proton_right_xi_vs_pf_xiPlus"]->Fill( pfXiPlusReco, -xi_proton_right, event_weight );
-					histosTH2F["proton_right_xi_vs_pf_xiMinus"]->Fill( pfXiMinusReco, -xi_proton_right, event_weight );
-					/*if(xi_proton_right > 0.){
-					  histosTH1F["proton_right_logXi"]->Fill( log10(xi_proton_right), event_weight );
-					  histosTH2F["proton_right_logXi_vs_pf_logXiPlus"]->Fill( log10(pfXiPlusReco),log10(xi_proton_right), event_weight );
-					  histosTH2F["proton_right_logXi_vs_pf_logXiMinus"]->Fill( log10(pfXiMinusReco),log10(xi_proton_right), event_weight );
-					  histosTH2F["proton_right_logXi_vs_t"]->Fill( -t_proton_right, log10(xi_proton_right), event_weight );
-					  }*/
-					//histosTH1F["pf_xiMinus_minus_proton_right_xi"]->Fill( (pfXiMinusReco - xi_proton_right), event_weight );
-					if(pfXiMinusReco>0.12){
-						xi_totem_right_cut = -xi_proton_right;
-						histosTH1F["proton_right_xi_totem"]->Fill( xi_totem_right_cut, event_weight );
-						histosTH1F["pf_xiMinus_minus_proton_right_xi"]->Fill( (pfXiMinusReco + xi_proton_right), event_weight );
-					}
-					histosTH1F["pfxiMinus_minus_proton_right_xi"]->Fill( (pfXiMinusReco + xi_proton_right), event_weight );
-					//double xi_totem_right = histosTH1F["proton_right_xi_totem"]->GetRandom(); 
-					//histosTH1F["random_xi_totem_right"]->Fill(xi_totem_right,event_weight);
-					//histosTH1F["random_pfxiMinus_minus_proton_right_xi"]->Fill( (xi_cms_minus - xi_totem_right), event_weight );
+	// RP protons
+	//if(!isMC){
+	if(verbose)cout<<"1876-RP_track_info"<<endl;
+	RPRootDumpTrackInfo* rp_track_info_020 = rp_track_info[20];
+	RPRootDumpTrackInfo* rp_track_info_021 = rp_track_info[21];
+	RPRootDumpTrackInfo* rp_track_info_022 = rp_track_info[22];
+	RPRootDumpTrackInfo* rp_track_info_023 = rp_track_info[23];
+	RPRootDumpTrackInfo* rp_track_info_024 = rp_track_info[24];
+	RPRootDumpTrackInfo* rp_track_info_025 = rp_track_info[25];
+	if(verbose)cout<<"RP_track_info left"<<endl;
+	RPRootDumpTrackInfo* rp_track_info_120 = rp_track_info[120];
+	RPRootDumpTrackInfo* rp_track_info_121 = rp_track_info[121];
+	RPRootDumpTrackInfo* rp_track_info_122 = rp_track_info[122];
+	RPRootDumpTrackInfo* rp_track_info_123 = rp_track_info[123];
+	RPRootDumpTrackInfo* rp_track_info_124 = rp_track_info[124];
+	RPRootDumpTrackInfo* rp_track_info_125 = rp_track_info[125];
+	if(verbose)cout<<"RP_track_info right"<<endl;
+	double xi_left = rec_proton_left->xi;                       
+	double xi_right = rec_proton_right->xi;
+	double deltax020024 = 0.;
+	double deltax120124 = 0.;
+	double deltay020024 = 0.;
+	double deltay120124 = 0.;
 
 
-					if( (pfXiMinusReco + xi_proton_right) < 0. ){
-						++nevtxisignalright;
-						//select_proton_minus = true;
-						//histosTH1F["proton_right_xi_selected"]->Fill( xi_proton_right, event_weight );
-						//histosTH1F["proton_right_t_selected"]->Fill( -t_proton_right, event_weight );
-					}
-				}
+	bool rp_track_valid_020 = rp_track_info_020->valid && proton_left_valid;
+	if( rp_track_valid_020 ){
+		double rp_track_posx_020 = rp_track_info_020->x;
+		double rp_track_posy_020 = rp_track_info_020->y;
+		histosTH1F["rp_track_posx_020"]->Fill( rp_track_posx_020, event_weight );
+		histosTH1F["rp_track_posy_020"]->Fill( rp_track_posy_020, event_weight );
+		histosTH2F["rp_track_pos_y_vs_x_020"]->Fill( rp_track_posx_020, rp_track_posy_020, event_weight );
+		histosTH2F["proton_left_xi_vs_rp_track_posx_020"]->Fill( rp_track_posx_020, xi_left, event_weight );
+		if(verbose)cout<<"RP_track_info 020"<<endl;
 
-				double chi2_proton_left = rec_proton_left->chi2;
-				//double chindf_proton_left = rec_proton_left->chindf;
-				double xi_proton_left = rec_proton_left->xi;
-				double t_proton_left = rec_proton_left->t;
-				//bool good_proton_left = proton_left_valid && (chi2_proton_left/chindf_proton_left > 1);
-				//bool good_proton_left = proton_left_valid && ((-0.23 < xi_proton_left)&&( xi_proton_left < 0.04));
-				bool good_proton_left = proton_left_valid;
-				bool select_proton_plus = false;
-				double xi_totem_left_cut;
-				if( good_proton_left ){
-					if(verbose)cout<<"1881-good proton left"<<endl;
+	}
+bool rp_track_valid_021 = rp_track_info_021->valid && proton_left_valid;
+if( rp_track_valid_021 ){
+	double rp_track_posx_021 = rp_track_info_021->x;
+	double rp_track_posy_021 = rp_track_info_021->y;
+	histosTH1F["rp_track_posx_021"]->Fill( rp_track_posx_021, event_weight );
+	histosTH1F["rp_track_posy_021"]->Fill( rp_track_posy_021, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_021"]->Fill( rp_track_posx_021, rp_track_posy_021, event_weight );
+	histosTH2F["proton_left_xi_vs_rp_track_posx_021"]->Fill( rp_track_posx_021, xi_left, event_weight );
+	if(verbose)cout<<"RP_track_info 021"<<endl;
+}
+bool rp_track_valid_022 = rp_track_info_022->valid && proton_left_valid;
+if( rp_track_valid_022 ){
+	double rp_track_posx_022 = rp_track_info_022->x;
+	double rp_track_posy_022 = rp_track_info_022->y;
+	histosTH1F["rp_track_posx_022"]->Fill( rp_track_posx_022, event_weight );
+	histosTH1F["rp_track_posy_022"]->Fill( rp_track_posy_022, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_022"]->Fill( rp_track_posx_022, rp_track_posy_022, event_weight );
+	histosTH2F["proton_left_xi_vs_rp_track_posx_022"]->Fill( rp_track_posx_022, xi_left, event_weight );
+	if(verbose)cout<<"RP_track_info 022"<<endl;
+}
+bool rp_track_valid_023 = rp_track_info_023->valid && proton_left_valid;
+if( rp_track_valid_023 ){
+	double rp_track_posx_023 = rp_track_info_023->x;
+	double rp_track_posy_023 = rp_track_info_023->y;
+	histosTH1F["rp_track_posx_023"]->Fill( rp_track_posx_023, event_weight );
+	histosTH1F["rp_track_posy_023"]->Fill( rp_track_posy_023, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_023"]->Fill( rp_track_posx_023, rp_track_posy_023, event_weight );
+	histosTH2F["proton_left_xi_vs_rp_track_posx_023"]->Fill( rp_track_posx_023, xi_left, event_weight );
+	if(verbose)cout<<"RP_track_info 023"<<endl;
+}
+bool rp_track_valid_024 = rp_track_info_024->valid && proton_left_valid;
+//double xi_left = rec_proton_left->xi;
+if( rp_track_valid_024 ){
+	double rp_track_posx_024 = rp_track_info_024->x;
+	double rp_track_posy_024 = rp_track_info_024->y;
+	histosTH1F["rp_track_posx_024"]->Fill( rp_track_posx_024, event_weight );
+	histosTH1F["rp_track_posy_024"]->Fill( rp_track_posy_024, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_024"]->Fill( rp_track_posx_024, rp_track_posy_024, event_weight );
+	histosTH2F["proton_left_xi_vs_rp_track_posx_024"]->Fill( rp_track_posx_024, xi_left, event_weight );
+	deltay020024 = ( rp_track_info_020->y -  rp_track_info_024->y);
+	deltax020024 = ( rp_track_info_020->x -  rp_track_info_024->x);
+	histosTH2F["Deltaxleft_x020x024_vs_posx_020"]->Fill( deltax020024,  rp_track_info_020->x, event_weight );
+	histosTH2F["Deltayleft_y020y024_vs_posy_020"]->Fill( deltay020024,  rp_track_info_020->y, event_weight );
+	if(verbose)cout<<"RP_track_info deltax020024"<<endl;
+	if(verbose)cout<<"RP_track_info 024"<<endl;
+}
+bool rp_track_valid_025 = rp_track_info_025->valid && proton_left_valid;
+if( rp_track_valid_025 ){
+	double rp_track_posx_025 = rp_track_info_025->x;
+	double rp_track_posy_025 = rp_track_info_025->y;
+	histosTH1F["rp_track_posx_025"]->Fill( rp_track_posx_025, event_weight );
+	histosTH1F["rp_track_posy_025"]->Fill( rp_track_posy_025, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_025"]->Fill( rp_track_posx_025, rp_track_posy_025, event_weight );
+	histosTH2F["proton_left_xi_vs_rp_track_posx_025"]->Fill( rp_track_posx_025, xi_left, event_weight );
+	if(verbose)cout<<"RP_track_info 025"<<endl;
+}
+
+bool rp_track_valid_120 = rp_track_info_120->valid && proton_right_valid;
+if( rp_track_valid_120 ){
+	double rp_track_posx_120 = rp_track_info_120->x;
+	double rp_track_posy_120 = rp_track_info_120->y;
+	histosTH1F["rp_track_posx_120"]->Fill( rp_track_posx_120, event_weight );
+	histosTH1F["rp_track_posy_120"]->Fill( rp_track_posy_120, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_120"]->Fill( rp_track_posx_120, rp_track_posy_120, event_weight );
+	histosTH2F["proton_right_xi_vs_rp_track_posx_120"]->Fill( rp_track_posx_120, xi_right, event_weight );
+	if(verbose)cout<<"RP_track_info 120"<<endl;
+}
+bool rp_track_valid_121 = rp_track_info_121->valid && proton_right_valid;
+if( rp_track_valid_121 ){
+	double rp_track_posx_121 = rp_track_info_121->x;
+	double rp_track_posy_121 = rp_track_info_121->y;
+	histosTH1F["rp_track_posx_121"]->Fill( rp_track_posx_121, event_weight );
+	histosTH1F["rp_track_posy_121"]->Fill( rp_track_posy_121, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_121"]->Fill( rp_track_posx_121, rp_track_posy_121, event_weight );
+	histosTH2F["proton_right_xi_vs_rp_track_posx_121"]->Fill( rp_track_posx_121, xi_right, event_weight );
+	if(verbose)cout<<"RP_track_info 121"<<endl;
+}
+bool rp_track_valid_122 = rp_track_info_122->valid && proton_right_valid;
+if( rp_track_valid_122 ){
+	double rp_track_posx_122 = rp_track_info_122->x;
+	double rp_track_posy_122 = rp_track_info_122->y;
+	histosTH1F["rp_track_posx_122"]->Fill( rp_track_posx_122, event_weight );
+	histosTH1F["rp_track_posy_122"]->Fill( rp_track_posy_122, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_122"]->Fill( rp_track_posx_122, rp_track_posy_122, event_weight );
+	histosTH2F["proton_right_xi_vs_rp_track_posx_122"]->Fill( rp_track_posx_122, xi_right, event_weight );
+	if(verbose)cout<<"RP_track_info 122"<<endl;
+}
+bool rp_track_valid_123 = rp_track_info_123->valid && proton_right_valid;
+if( rp_track_valid_123 ){
+	double rp_track_posx_123 = rp_track_info_123->x;
+	double rp_track_posy_123 = rp_track_info_123->y;
+	histosTH1F["rp_track_posx_123"]->Fill( rp_track_posx_123, event_weight );
+	histosTH1F["rp_track_posy_123"]->Fill( rp_track_posy_123, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_123"]->Fill( rp_track_posx_123, rp_track_posy_123, event_weight );
+	histosTH2F["proton_right_xi_vs_rp_track_posx_123"]->Fill( rp_track_posx_123, xi_right, event_weight );
+	if(verbose)cout<<"RP_track_info 123"<<endl;
+}
+bool rp_track_valid_124 = rp_track_info_124->valid && proton_right_valid;
+//double xi_right = rec_proton_right->xi;
+if( rp_track_valid_124 ){
+	double rp_track_posx_124 = rp_track_info_124->x;
+	double rp_track_posy_124 = rp_track_info_124->y;
+	histosTH1F["rp_track_posx_124"]->Fill( rp_track_posx_124, event_weight );
+	histosTH1F["rp_track_posy_124"]->Fill( rp_track_posy_124, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_124"]->Fill( rp_track_posx_124, rp_track_posy_124, event_weight );
+	histosTH2F["proton_right_xi_vs_rp_track_posx_124"]->Fill( rp_track_posx_124, xi_right, event_weight );
+	deltax120124 = ( rp_track_info_120->x - rp_track_posx_124);
+	deltay120124 = ( rp_track_info_120->y - rp_track_posy_124);
+	histosTH2F["Deltaxright_x120x124_vs_posx_120"]->Fill( deltax120124,rp_track_info_120->x, event_weight );
+	histosTH2F["Deltayright_y120y124_vs_posy_120"]->Fill( deltay120124,rp_track_info_120->y, event_weight );
+	if(verbose)cout<<"RP_track_info 124"<<endl;
+}
+bool rp_track_valid_125 = rp_track_info_125->valid && proton_right_valid;
+if( rp_track_valid_125 ){
+	double rp_track_posx_125 = rp_track_info_125->x;
+	double rp_track_posy_125 = rp_track_info_125->y;
+	histosTH1F["rp_track_posx_125"]->Fill( rp_track_posx_125, event_weight );
+	histosTH1F["rp_track_posy_125"]->Fill( rp_track_posy_125, event_weight );
+	histosTH2F["rp_track_pos_y_vs_x_125"]->Fill( rp_track_posx_125, rp_track_posy_125, event_weight );
+	histosTH2F["proton_right_xi_vs_rp_track_posx_125"]->Fill( rp_track_posx_125, xi_right, event_weight );
+	if(verbose)cout<<"RP_track_info 125"<<endl;
+}
+
+
+double xi_totem_right_cut;
+double chi2_proton_right = rec_proton_right->chi2;
+//double chindf_proton_right = rec_proton_right->chindf;
+double xi_proton_right = rec_proton_right->xi;
+double t_proton_right = rec_proton_right->t;
+//bool good_proton_right = proton_right_valid && (chi2_proton_right/chindf_proton_right > 1);
+//bool good_proton_right = proton_right_valid && ((-0.23 < xi_proton_right)&&( xi_proton_right < 0.04));   ; //&& ((-0.04 < xi_proton_right)&&( xi_proton_right < 0.23));
+bool good_proton_right = proton_right_valid;
+bool select_proton_minus = false;
+
+
+if( good_proton_right ){
+	if(verbose)cout<<"2033-good proton rigth"<<endl;
+	//double t_proton_right = rec_proton_right->t;
+	histosTH1F["proton_right_chi2"]->Fill( chi2_proton_right, event_weight );
+	histosTH1F["proton_right_xi"]->Fill(- xi_proton_right, event_weight );
+	histosTH1F["proton_right_t"]->Fill( -t_proton_right, event_weight );
+	//histosTH2F["proton_right_xi_vs_rp_track_posx_124"]->Fill( rp_track_posx_124, xi_proton_right, event_weight );
+	histosTH2F["proton_right_xi_vs_pf_xiPlus"]->Fill( pfXiPlusReco, -xi_proton_right, event_weight );
+	histosTH2F["proton_right_xi_vs_pf_xiMinus"]->Fill( pfXiMinusReco, -xi_proton_right, event_weight );
+	/*if(xi_proton_right > 0.){
+	  histosTH1F["proton_right_logXi"]->Fill( log10(xi_proton_right), event_weight );
+	  histosTH2F["proton_right_logXi_vs_pf_logXiPlus"]->Fill( log10(pfXiPlusReco),log10(xi_proton_right), event_weight );
+	  histosTH2F["proton_right_logXi_vs_pf_logXiMinus"]->Fill( log10(pfXiMinusReco),log10(xi_proton_right), event_weight );
+	  histosTH2F["proton_right_logXi_vs_t"]->Fill( -t_proton_right, log10(xi_proton_right), event_weight );
+	  }*/
+	//histosTH1F["pf_xiMinus_minus_proton_right_xi"]->Fill( (pfXiMinusReco - xi_proton_right), event_weight );
+	if(pfXiMinusReco>0.12){
+		xi_totem_right_cut = -xi_proton_right;
+		histosTH1F["proton_right_xi_totem"]->Fill( xi_totem_right_cut, event_weight );
+		histosTH1F["pf_xiMinus_minus_proton_right_xi"]->Fill( (pfXiMinusReco + xi_proton_right), event_weight );
+	}
+	histosTH1F["pfxiMinus_minus_proton_right_xi"]->Fill( (pfXiMinusReco + xi_proton_right), event_weight );
+	//double xi_totem_right = histosTH1F["proton_right_xi_totem"]->GetRandom(); 
+	//histosTH1F["random_xi_totem_right"]->Fill(xi_totem_right,event_weight);
+	//histosTH1F["random_pfxiMinus_minus_proton_right_xi"]->Fill( (xi_cms_minus - xi_totem_right), event_weight );
+
+
+	if( (pfXiMinusReco + xi_proton_right) < 0. ){
+		++nevtxisignalright;
+		//select_proton_minus = true;
+		//histosTH1F["proton_right_xi_selected"]->Fill( xi_proton_right, event_weight );
+		//histosTH1F["proton_right_t_selected"]->Fill( -t_proton_right, event_weight );
+	}
+}
+
+double chi2_proton_left = rec_proton_left->chi2;
+//double chindf_proton_left = rec_proton_left->chindf;
+double xi_proton_left = rec_proton_left->xi;
+double t_proton_left = rec_proton_left->t;
+//bool good_proton_left = proton_left_valid && (chi2_proton_left/chindf_proton_left > 1);
+//bool good_proton_left = proton_left_valid && ((-0.23 < xi_proton_left)&&( xi_proton_left < 0.04));
+bool good_proton_left = proton_left_valid;
+bool select_proton_plus = false;
+double xi_totem_left_cut;
+if( good_proton_left ){
+	if(verbose)cout<<"1881-good proton left"<<endl;
+	//double t_proton_left = rec_proton_left->t;
+	histosTH1F["proton_left_chi2"]->Fill( chi2_proton_left, event_weight );
+	histosTH1F["proton_left_xi"]->Fill( -xi_proton_left, event_weight );
+	histosTH1F["proton_left_t"]->Fill( -t_proton_left, event_weight );
+	//histosTH2F["proton_left_xi_vs_rp_track_posx_024"]->Fill( rp_track_posx_024, xi_proton_left, event_weight );
+	histosTH2F["proton_left_xi_vs_pf_xiPlus"]->Fill( pfXiPlusReco, -xi_proton_left, event_weight );
+	histosTH2F["proton_left_xi_vs_pf_xiMinus"]->Fill( pfXiMinusReco, -xi_proton_left, event_weight );
+	/*if(xi_proton_left > 0.){
+	  if(verbose)cout<<"2113-xi_proton_left > 0."<<endl;
+	  histosTH1F["proton_left_logXi"]->Fill( log10(-xi_proton_left), event_weight );
+	  histosTH2F["proton_left_logXi_vs_pf_logXiPlus"]->Fill( log10(pfXiPlusReco),log10(-xi_proton_left), event_weight );
+	  histosTH2F["proton_left_logXi_vs_pf_logXiMinus"]->Fill( log10(pfXiMinusReco),log10(-xi_proton_left), event_weight );
+	  histosTH2F["proton_left_logXi_vs_t"]->Fill( -t_proton_left, log10(-xi_proton_left), event_weight );
+	  }*/
+
+
+	//histosTH1F["pf_xiPlus_minus_proton_left_xi"]->Fill( (pfXiPlusReco + xi_proton_left), event_weight );
+	if (pfXiPlusReco>0.12){
+		if(verbose)cout<<"2127-pfXiPlusReco>0.11"<<endl;
+		xi_totem_left_cut = -xi_proton_left;
+		histosTH1F["proton_left_xi_totem"]->Fill(xi_totem_left_cut, event_weight );
+		histosTH1F["pf_xiPlus_minus_proton_left_xi"]->Fill( (pfXiPlusReco + xi_proton_left), event_weight );
+	}
+	histosTH1F["pfxiPlus_minus_proton_left_xi"]->Fill( (pfXiPlusReco + xi_proton_left), event_weight );
+	//double xi_totem_left = histosTH1F["proton_left_xi_totem"]->GetRandom(); 
+	//histosTH1F["random_xi_totem_left"]->Fill(xi_totem_left,event_weight);
+	//histosTH1F["random_pfxiPlus_minus_proton_left_xi"]->Fill( (xi_cms_plus - xi_totem_left), event_weight );
+
+	//if(verbose)cout<<"(pfXiPlusReco - xi_proton_left) = "<< (pfXiPlusReco - xi_proton_left)<<endl;
+	if( (pfXiPlusReco + xi_proton_left) < 0. ){
+		//select_proton_plus = true;
+		++nevtxisignalleft;
+		if(verbose)cout<<"2132 - (pfXiPlusReco - xi_proton_left) < 0.  "<<endl;
+		//histosTH1F["proton_left_xi_selected"]->Fill( -xi_proton_left, event_weight );
+		//histosTH1F["proton_left_t_selected"]->Fill( -t_proton_left, event_weight );
+	}
+}
+bool proton_pair_valid = rec_proton_pair->valid;
+double chi2_proton_pair = rec_proton_pair->chi2;
+//double chindf_proton_pair = rec_proton_pair->chindf;
+double xi_proton_pair_right = rec_proton_pair->xir;
+double xi_proton_pair_left = rec_proton_pair->xil;
+//bool good_proton_pair = proton_pair_valid && (chi2_proton_pair/chindf_proton_pair > 2);
+bool good_proton_pair = proton_pair_valid; //&& (-0.23< xi_proton_right < 0.04) && (-0.23< xi_proton_left < 0.04);
+if( good_proton_pair ){
+	histosTH1F["proton_pair_chi2"]->Fill( chi2_proton_pair, event_weight );
+	//double xi_proton_pair_right = rec_proton_pair->xir;
+	double t_proton_pair_right = rec_proton_pair->tr;
+	histosTH1F["proton_pair_right_xi"]->Fill( -xi_proton_pair_right, event_weight );
+	histosTH1F["proton_pair_right_t"]->Fill( -t_proton_pair_right, event_weight );
+	if(-xi_proton_pair_right > 0.)
+		histosTH1F["proton_pair_right_logXi"]->Fill( log10(-xi_proton_pair_right), event_weight );
+	/*if(xi_proton_pair_right > 0.)
+	  histosTH1F["proton_pair_right_logXi"]->Fill( log10(xi_proton_pair_right), event_weight );*/
+
+	//double xi_proton_pair_left = rec_proton_pair->xil;
+	double t_proton_pair_left = rec_proton_pair->tl;
+	histosTH1F["proton_pair_left_xi"]->Fill( -xi_proton_pair_left, event_weight );
+	histosTH1F["proton_pair_left_t"]->Fill( -t_proton_pair_left, event_weight );
+	if(-xi_proton_pair_left > 0.){
+		histosTH1F["proton_pair_left_logXi"]->Fill( log10(-xi_proton_pair_left), event_weight );  }
+	/*if(xi_proton_pair_left > 0.)
+	  histosTH1F["proton_pair_left_logXi"]->Fill( log10(xi_proton_pair_left), event_weight );*/
+	/*if( selectRPProton && !(select_proton_minus || select_proton_plus) ) continue;
+	  histosTH1F["EventSelection"]->Fill( "RPProton", event_weight );*/
+
+}
+
+//-------------------
+// After selection 
+//-------------------
+if( good_proton_right && dimuon_pt <= ptMax ){
+	n_dimuons_proton_right++;
+	//double t_proton_right = rec_proton_right->t;
+	//	cout<< "ptmu1: "<< ptmu1<< endl;
+	//First muon
+	histosTH1F["muon1_pt_proton_right"]->Fill( ptmu1, event_weight );
+	histosTH1F["muon1_eta_proton_right"]->Fill( etamu1, event_weight );
+	histosTH1F["muon1_rapidity_proton_right"]->Fill( ymu1, event_weight );
+	histosTH1F["muon1_phi_proton_right"]->Fill(phimu1, event_weight );
+	//Second Muon
+	histosTH1F["muon2_pt_proton_right"]->Fill( ptmu2, event_weight );
+	histosTH1F["muon2_eta_proton_right"]->Fill( etamu2, event_weight );
+	histosTH1F["muon2_rapidity_proton_right"]->Fill( ymu2, event_weight );
+	histosTH1F["muon2_phi_proton_right"]->Fill(phimu2, event_weight );
+
+	//
+	histosTH1F["dimuon_proton_right_xi"]->Fill( -xi_proton_right, event_weight );
+	histosTH1F["dimuon_proton_right_t"]->Fill( fabs(t_proton_right), event_weight );
+
+	histosTH1F["dimuon_mass_proton_right"]->Fill( dimuon_mass, event_weight );
+	histosTH1F["dimuon_pt_proton_right"]->Fill( dimuon_pt, event_weight );
+	histosTH1F["dimuon_pt2_proton_right"]->Fill( dimuon_pt2, event_weight );
+	histosTH1F["dimuon_eta_proton_right"]->Fill( dimuon_eta, event_weight );
+	histosTH1F["dimuon_rapidity_proton_right"]->Fill( dimuon_rapidity, event_weight );			
+	histosTH1F["muonDeltaPt_proton_right"]->Fill(deltapt, event_weight );
+	histosTH1F["muonDeltaEta_proton_right"]->Fill(deltaeta, event_weight );
+	histosTH1F["muonDeltaPhi_proton_right"]->Fill(deltaphi, event_weight );
+	histosTH1F["muonDeltaY_proton_right"]->Fill(deltay, event_weight );
+	histosTH2F["DeltaPhi_vs_dimuon_pt_proton_right"]->Fill(dimuon_pt,deltaphi, event_weight );
+
+	if (fabs(t_proton_right)>=t_proton_down_ && fabs(t_proton_right)<t_proton_up_){
+		//if(proton_plus_t_range){
+		n_dimuons_t_selected_proton_right++;
+		if(verbose) cout<< "t proton right side (abs):"<< "["<< fabs(t_proton_right)<< "]"<< endl;
+
+		histosTH1F["dimuon_mass_t_cut_proton_right"]->Fill( dimuon_mass, event_weight );
+		histosTH1F["dimuon_pt_t_cut_proton_right"]->Fill(dimuon_pt , event_weight );
+
+		histosTH1F["dimuon_pt2_t_cut_proton_right"]->Fill( dimuon_pt2, event_weight );
+		histosTH1F["dimuon_eta_t_cut_proton_right"]->Fill( dimuon_eta, event_weight );
+		histosTH1F["dimuon_rapidity_t_cut_proton_right"]->Fill( dimuon_rapidity, event_weight );
+		histosTH1F["proton_right_xi_t_cut"]->Fill( xi_proton_right, event_weight );
+		histosTH1F["proton_right_t_t_cut"]->Fill( fabs(t_proton_right), event_weight );
+		histosTH1F["muonDeltaPt_t_cut_proton_right"]->Fill(deltapt, event_weight );
+		histosTH1F["muonDeltaEta_t_cut_proton_right"]->Fill(deltaeta, event_weight );	
+		histosTH1F["muonDeltaPhi_t_cut_proton_right"]->Fill(deltaphi, event_weight );
+		histosTH1F["muonDeltaY_t_cut_proton_right"]->Fill(deltay, event_weight ); 
+		histosTH2F["DeltaPhi_vs_dimuon_pt_t_cut_proton_right"]->Fill(dimuon_pt,deltaphi, event_weight );
+
+
+
+	}
+	}
+	if( good_proton_left  && dimuon_pt <= ptMax){
+		n_dimuons_proton_left++;
+		//double t_proton_left = rec_proton_left->t;
+		//First muon
+		//	 cout<< "ptmu1: "<< ptmu1<< endl;
+		histosTH1F["muon1_pt_proton_left"]->Fill( ptmu1, event_weight );
+		histosTH1F["muon1_eta_proton_left"]->Fill( etamu1, event_weight );
+		histosTH1F["muon1_rapidity_proton_left"]->Fill( ymu1, event_weight );
+		histosTH1F["muon1_phi_proton_left"]->Fill(phimu1, event_weight );
+		//Second Muon
+		histosTH1F["muon2_pt_proton_left"]->Fill( ptmu2, event_weight );
+		histosTH1F["muon2_eta_proton_left"]->Fill( etamu2, event_weight );
+		histosTH1F["muon2_rapidity_proton_left"]->Fill( ymu2, event_weight );
+		histosTH1F["muon2_phi_proton_left"]->Fill(phimu2, event_weight );
+
+		histosTH1F["dimuon_proton_left_xi"]->Fill( -xi_proton_left, event_weight );
+		histosTH1F["dimuon_proton_left_t"]->Fill( fabs(t_proton_left), event_weight ); 
+
+		histosTH1F["dimuon_mass_proton_left"]->Fill( dimuon_mass, event_weight );
+		histosTH1F["dimuon_pt_proton_left"]->Fill( dimuon_pt, event_weight );
+		histosTH1F["dimuon_pt2_proton_left"]->Fill( dimuon_pt2, event_weight );
+		histosTH1F["dimuon_eta_proton_left"]->Fill( dimuon_eta, event_weight );
+		histosTH1F["dimuon_rapidity_proton_left"]->Fill( dimuon_rapidity, event_weight );
+		histosTH1F["muonDeltaPt_proton_left"]->Fill(deltapt, event_weight );
+		histosTH1F["muonDeltaEta_proton_left"]->Fill(deltaeta, event_weight );
+		histosTH1F["muonDeltaPhi_proton_left"]->Fill(deltaphi, event_weight );
+		histosTH1F["muonDeltaY_proton_left"]->Fill(deltay, event_weight );
+		histosTH2F["DeltaPhi_vs_dimuon_pt_proton_left"]->Fill(dimuon_pt,deltaphi, event_weight );
+
+		if (fabs(t_proton_left)>=t_proton_down_ && fabs(t_proton_left)<t_proton_up_){
+			//if(proton_minus_t_range){
+			n_dimuons_t_selected_proton_left++;	
+			if(verbose) cout<< "t proton left side (abs):"<< "["<< fabs(t_proton_left)<< "]"<< endl;
+
+
+			histosTH1F["dimuon_mass_t_cut_proton_left"]->Fill( dimuon_mass, event_weight );
+			histosTH1F["dimuon_pt_t_cut_proton_left"]->Fill( dimuon_pt, event_weight );
+			histosTH1F["dimuon_pt2_t_cut_proton_left"]->Fill(dimuon_pt2, event_weight );
+
+			histosTH1F["dimuon_eta_t_cut_proton_left"]->Fill( dimuon_eta, event_weight );
+			histosTH1F["dimuon_rapidity_t_cut_proton_left"]->Fill( dimuon_rapidity, event_weight );
+			histosTH1F["proton_left_xi_t_cut"]->Fill( -xi_proton_left, event_weight );
+			histosTH1F["proton_left_t_t_cut"]->Fill( fabs(t_proton_left), event_weight );
+			histosTH1F["muonDeltaPt_t_cut_proton_left"]->Fill(deltapt, event_weight );
+			histosTH1F["muonDeltaEta_t_cut_proton_left"]->Fill(deltaeta, event_weight );	
+			histosTH1F["muonDeltaPhi_t_cut_proton_left"]->Fill(deltaphi, event_weight );
+			histosTH1F["muonDeltaY_t_cut_proton_left"]->Fill(deltay, event_weight ); 
+			histosTH2F["DeltaPhi_vs_dimuon_pt_t_cut_proton_left"]->Fill(dimuon_pt,deltaphi, event_weight );
+
+
+
+		}
+		}
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		if( good_proton_right  && dimuon_pt <= ptMax){
+			if((dimuon_mass >low_Bin) && (dimuon_mass < high_Bin)){
+
+				n_dy_proton_right++;
+				//double t_proton_right = rec_proton_right->t;
+				histosTH1F["dy_proton_right_xi"]->Fill( -xi_proton_right, event_weight );
+				histosTH1F["dy_proton_right_t"]->Fill( fabs(t_proton_right), event_weight );
+
+				//histosTH1F["dy_multiplicity_proton_right"]->Fill(n_dimuons_selected, event_weight );
+				histosTH1F["dy_mass_proton_right"]->Fill( dimuon_mass, event_weight );
+				histosTH1F["dy_pt_proton_right"]->Fill( dimuon_pt, event_weight );
+				histosTH1F["dy_pt2_proton_right"]->Fill( dimuon_pt2, event_weight );
+				histosTH1F["dy_eta_proton_right"]->Fill( dimuon_eta, event_weight );
+				histosTH1F["dy_rapidity_proton_right"]->Fill( dimuon_rapidity, event_weight );
+				histosTH1F["muonDeltaPt_dy_proton_right"]->Fill(deltapt, event_weight );
+				histosTH1F["muonDeltaEta_dy_proton_right"]->Fill(deltaeta, event_weight );
+				histosTH1F["muonDeltaPhi_dy_proton_right"]->Fill(deltaphi, event_weight );
+				histosTH1F["muonDeltaY_dy_proton_right"]->Fill(deltay, event_weight );
+				histosTH2F["dy_DeltaPhi_vs_dimuon_pt_proton_right"]->Fill(dimuon_pt,deltaphi, event_weight );
+
+				if (fabs(t_proton_right)>=t_proton_down_ && fabs(t_proton_right)<t_proton_up_){
+					//if(proton_plus_t_range){
+					n_dy_t_selected_proton_right++;
+					if(verbose) cout<< "t proton right side (abs):"<< "["<< fabs(t_proton_right)<< "]"<< endl;
+					outstring_right << evtId->Run << ":"<< evtId->LumiSect << ":"<< evtId->Evt << endl;
+
+					histosTH1F["dy_dimuon_mass_t_cut_proton_right"]->Fill( dimuon_mass, event_weight );
+					histosTH1F["dy_dimuon_pt_t_cut_proton_right"]->Fill( dimuon_pt, event_weight );
+					histosTH1F["dy_dimuon_pt2_t_cut_proton_right"]->Fill( dimuon_pt2, event_weight );
+					histosTH1F["dy_dimuon_eta_t_cut_proton_right"]->Fill( dimuon_eta, event_weight );
+					histosTH1F["dy_dimuon_rapidity_t_cut_proton_right"]->Fill( dimuon_rapidity, event_weight );
+					histosTH1F["dy_proton_right_xi_t_cut"]->Fill( -xi_proton_right, event_weight );
+					histosTH1F["dy_proton_right_t_t_cut"]->Fill( fabs(t_proton_right), event_weight );
+					histosTH1F["muonDeltaPt_dy_t_cut_proton_right"]->Fill(deltapt, event_weight );
+					histosTH1F["muonDeltaEta_dy_t_cut_proton_right"]->Fill(deltaeta, event_weight );
+					histosTH1F["muonDeltaPhi_dy_t_cut_proton_right"]->Fill(deltaphi, event_weight );
+					histosTH1F["muonDeltaY_dy_t_cut_proton_right"]->Fill(deltay, event_weight );
+					histosTH2F["dy_DeltaPhi_vs_dimuon_pt_t_cut_proton_right"]->Fill(dimuon_pt,deltaphi, event_weight );
+
+				} // t right proton
+				} // right proton
+			} //dy mass
+			if( good_proton_left  && dimuon_pt <= ptMax){
+				if((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin)){
+					n_dy_proton_left++;
 					//double t_proton_left = rec_proton_left->t;
-					histosTH1F["proton_left_chi2"]->Fill( chi2_proton_left, event_weight );
-					histosTH1F["proton_left_xi"]->Fill( -xi_proton_left, event_weight );
-					histosTH1F["proton_left_t"]->Fill( -t_proton_left, event_weight );
-					//histosTH2F["proton_left_xi_vs_rp_track_posx_024"]->Fill( rp_track_posx_024, xi_proton_left, event_weight );
-					histosTH2F["proton_left_xi_vs_pf_xiPlus"]->Fill( pfXiPlusReco, -xi_proton_left, event_weight );
-					histosTH2F["proton_left_xi_vs_pf_xiMinus"]->Fill( pfXiMinusReco, -xi_proton_left, event_weight );
-					/*if(xi_proton_left > 0.){
-					  if(verbose)cout<<"2113-xi_proton_left > 0."<<endl;
-					  histosTH1F["proton_left_logXi"]->Fill( log10(-xi_proton_left), event_weight );
-					  histosTH2F["proton_left_logXi_vs_pf_logXiPlus"]->Fill( log10(pfXiPlusReco),log10(-xi_proton_left), event_weight );
-					  histosTH2F["proton_left_logXi_vs_pf_logXiMinus"]->Fill( log10(pfXiMinusReco),log10(-xi_proton_left), event_weight );
-					  histosTH2F["proton_left_logXi_vs_t"]->Fill( -t_proton_left, log10(-xi_proton_left), event_weight );
+
+					histosTH1F["dy_proton_left_xi"]->Fill(-xi_proton_left, event_weight );
+					histosTH1F["dy_proton_left_t"]->Fill( fabs(t_proton_left), event_weight );
+
+					histosTH1F["dy_mass_proton_left"]->Fill( dimuon_mass, event_weight );
+					histosTH1F["dy_pt_proton_left"]->Fill( dimuon_pt, event_weight );
+					histosTH1F["dy_pt2_proton_left"]->Fill( dimuon_pt2, event_weight );
+					histosTH1F["dy_eta_proton_left"]->Fill( dimuon_eta, event_weight );
+					histosTH1F["dy_rapidity_proton_left"]->Fill( dimuon_rapidity, event_weight );
+					histosTH1F["muonDeltaPt_dy_proton_left"]->Fill(deltapt, event_weight );
+					histosTH1F["muonDeltaEta_dy_proton_left"]->Fill(deltaeta, event_weight );
+					histosTH1F["muonDeltaPhi_dy_proton_left"]->Fill(deltaphi, event_weight );
+					histosTH1F["muonDeltaY_dy_proton_left"]->Fill(deltay, event_weight );   
+
+					histosTH2F["dy_DeltaPhi_vs_dimuon_pt_proton_left"]->Fill(dimuon_pt, deltaphi, event_weight );                    			
+
+					if (fabs(t_proton_left)>=t_proton_down_ && fabs(t_proton_left)<t_proton_up_){
+						//if(proton_minus_t_range){
+						n_dy_t_selected_proton_left++;
+						outstring_left << evtId->Run << ":"<< evtId->LumiSect << ":"<< evtId->Evt << endl;
+
+						if(verbose) cout<< "t proton left side (abs):"<< "["<< fabs(t_proton_left)<< "]"<< endl;
+
+
+						histosTH1F["dy_dimuon_mass_t_cut_proton_left"]->Fill( dimuon_mass, event_weight );
+						histosTH1F["dy_dimuon_pt_t_cut_proton_left"]->Fill( dimuon_pt, event_weight );
+						histosTH1F["dy_dimuon_pt2_t_cut_proton_left"]->Fill( dimuon_pt2, event_weight );
+						histosTH1F["dy_dimuon_eta_t_cut_proton_left"]->Fill( dimuon_eta, event_weight );
+						histosTH1F["dy_dimuon_rapidity_t_cut_proton_left"]->Fill( dimuon_rapidity, event_weight );
+						histosTH1F["dy_proton_left_xi_t_cut"]->Fill( -xi_proton_left, event_weight );
+						histosTH1F["dy_proton_left_t_t_cut"]->Fill( fabs(t_proton_left), event_weight );
+
+						histosTH1F["muonDeltaPt_dy_t_cut_proton_left"]->Fill(deltapt, event_weight );
+						histosTH1F["muonDeltaEta_dy_t_cut_proton_left"]->Fill(deltaeta, event_weight );
+						histosTH1F["muonDeltaPhi_dy_t_cut_proton_left"]->Fill(deltaphi, event_weight );
+						histosTH1F["muonDeltaY_dy_t_cut_proton_left"]->Fill(deltay, event_weight );
+
+						histosTH2F["dy_DeltaPhi_vs_dimuon_pt_t_cut_proton_left"]->Fill(dimuon_pt,deltaphi, event_weight );
+
+
+					} // t, proton left
+					} // good proton left
+				}//dy mass
+
+
+			} //!isMC
+			//===========================================================================
+			//-------------------
+			// After selection 
+			//-------------------
+
+			//-------------------
+			// Generator-level proton distributions
+			//-------------------
+			if(isMC){
+				if( selectRPPlusAccept && !proton_plus_rp_accept ) continue;
+				histosTH1F["EventSelection"]->Fill( "MCRPPlusAccept", event_weight );
+
+				if( selectRPMinusAccept && !proton_minus_rp_accept ) continue;
+				histosTH1F["EventSelection"]->Fill( "MCRPMinusAccept", event_weight );
+				if(sdplus){
+					if( proton_plus_rp_accept  && dimuon_pt <= ptMax ){//&& xi_proton_plus < 0.23){
+						histosTH1F["xi_proton_plus_selected"]->Fill( xi_proton_plus , event_weight );
+						histosTH1F["t_proton_plus_selected"]->Fill( fabs(t_proton_plus) , event_weight ); 
+						histosTH2F["proton_plus_xi_vs_t_selected"]->Fill( fabs(t_proton_plus) , xi_proton_plus , event_weight );
+						//dimuons              
+						++n_dimuons_rp_selected_plus_side;	
+						//histosTH1F["dimuon_multiplicity_rp_accept"]->Fill(n_dimuons_rp_selected_plus_side, event_weight );
+						histosTH1F["dimuon_mass_rpplus_accept"]->Fill( dimuon_mass, event_weight );
+						histosTH1F["dimuon_pt_rpplus_accept"]->Fill( dimuon_pt, event_weight );
+						histosTH1F["dimuon_pt2_rpplus_accept"]->Fill(dimuon_pt2, event_weight );
+						histosTH1F["dimuon_eta_rpplus_accept"]->Fill( dimuon_eta, event_weight );
+						histosTH1F["dimuon_rapidity_rpplus_accept"]->Fill( dimuon_rapidity, event_weight );
+						histosTH1F["muonDeltaPt_rpplus_accept"]->Fill(deltapt, event_weight );
+						histosTH1F["muonDeltaEta_rpplus_accept"]->Fill(deltaeta, event_weight );	
+						histosTH1F["muonDphi_rpplus_accept"]->Fill(Dphi, event_weight );
+						histosTH1F["muonDeltaPhi_rpplus_accept"]->Fill(deltaphi, event_weight );
+						histosTH1F["muonDeltaY_rpplus_accept"]->Fill(deltay, event_weight );
+						histosTH2F["DeltaPhi_vs_dimuon_pt_rpplus_accept"]->Fill(dimuon_pt, deltaphi, event_weight ); 
+						//i
+						//cout<< "ptmu1: "<< ptmu1<< endl;		
+						//First Muon
+						histosTH1F["muon1_pt_rpplus_accept"]->Fill( ptmu1, event_weight );
+
+						histosTH1F["muon1_eta_rpplus_accept"]->Fill( etamu1, event_weight );
+						histosTH1F["muon1_rapidity_rpplus_accept"]->Fill( ymu1, event_weight );
+						histosTH1F["muon1_phi_rpplus_accept"]->Fill(phimu1, event_weight );
+						//Second Muon
+						histosTH1F["muon2_pt_rpplus_accept"]->Fill( ptmu2, event_weight );
+						histosTH1F["muon2_eta_rpplus_accept"]->Fill( etamu2, event_weight );
+						histosTH1F["muon2_rapidity_rpplus_accept"]->Fill( ymu2, event_weight );
+						histosTH1F["muon2_phi_rpplus_accept"]->Fill(phimu2, event_weight );	
+
+						//dy
+						if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){  
+
+							// cout<<"dy_mass = "<< dy_mass << endl;
+							//++n_dy_rp_accept_selected;
+							++n_dy_selected_rp_accept_plus_side;
+							//histosTH1F["dy_multiplicity_rp_accept"]->Fill(n_dimuons_selected, event_weight );
+							histosTH1F["dy_mass_rpplus_accept"]->Fill(dy_mass, event_weight );
+							histosTH1F["dy_pt_rpplus_accept"]->Fill( dy_pt, event_weight );
+							histosTH1F["dy_pt2_rpplus_accept"]->Fill( dy_pt2, event_weight );
+							histosTH1F["dy_eta_rpplus_accept"]->Fill( dy_eta, event_weight );
+							histosTH1F["dy_rapidity_rpplus_accept"]->Fill( dy_rapidity, event_weight );
+							histosTH1F["muonDeltaPt_dy_rpplus_accept"]->Fill(deltapt, event_weight );
+							histosTH1F["muonDeltaEta_dy_rpplus_accept"]->Fill(deltaeta, event_weight );	
+							histosTH1F["muonDeltaPhi_dy_rpplus_accept"]->Fill(deltaphi, event_weight );
+							histosTH1F["muonDeltaY_dy_rpplus_accept"]->Fill(deltay, event_weight );  
+
+							histosTH1F["dy_t_plus_rpplus_accept"]->Fill( fabs(t_proton_plus), event_weight );
+							histosTH1F["dy_xi_plus_rpplus_accept"]->Fill( xi_proton_plus, event_weight );
+							histosTH1F["muonDphi_dy_rpplus_accept"]->Fill(Dphi, event_weight );
+							histosTH2F["dy_DeltaPhi_vs_dimuon_pt_rpplus_accept"]->Fill(dimuon_pt, deltaphi,event_weight ); 
+
+						}
+
+						if(proton_plus_t_range){
+							histosTH1F["xi_proton_t_range_plus_selected"]->Fill( xi_proton_plus , event_weight );
+							//----------------------------------------------
+							//dimuons              
+							++n_dimuons_rp_selected_tsel_plus_side;	
+							//histosTH1F["dimuon_multiplicity_rp_accept"]->Fill(n_dimuons_rp_selected_plus_side, event_weight );
+							histosTH1F["dimuon_mass_rpplus_accept_tsel"]->Fill( dimuon_mass, event_weight );
+							histosTH1F["dimuon_pt_rpplus_accept_tsel"]->Fill( dimuon_pt, event_weight );
+							histosTH1F["dimuon_pt2_rpplus_accept_tsel"]->Fill(dimuon_pt2, event_weight );
+							histosTH1F["dimuon_eta_rpplus_accept_tsel"]->Fill( dimuon_eta, event_weight );
+							histosTH1F["dimuon_rapidity_rpplus_accept_tsel"]->Fill( dimuon_rapidity, event_weight );
+							histosTH1F["muonDeltaPt_rpplus_accept_tsel"]->Fill(deltapt, event_weight );
+							histosTH1F["muonDeltaEta_rpplus_accept_tsel"]->Fill(deltaeta, event_weight );	
+							histosTH1F["muonDphi_rpplus_accept_tsel"]->Fill(Dphi, event_weight );
+							histosTH1F["muonDeltaPhi_rpplus_accept_tsel"]->Fill(deltaphi, event_weight );
+							histosTH1F["muonDeltaY_rpplus_accept_tsel"]->Fill(deltay, event_weight ); 
+							histosTH2F["DeltaPhi_vs_dimuon_pt_rpplus_accept_tsel"]->Fill(dimuon_pt, deltaphi, event_weight ); 
+
+							//dy
+							if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){  
+								//cout<< " rp accept after selection |t| && mass range: "<< " |t| proton plus "<< fabs(t_proton_plus)<<endl;
+								//cout<<"dy_mass = "<< dy_mass << endl;
+								++n_dy_selected_rp_accept_tsel_plus_side;
+								//histosTH1F["dy_multiplicity_rp_accept"]->Fill(n_dimuons_selected, event_weight );
+								histosTH1F["dy_mass_rpplus_accept_tsel"]->Fill(dy_mass, event_weight );
+								histosTH1F["dy_pt_rpplus_accept_tsel"]->Fill( dy_pt, event_weight );
+								histosTH1F["dy_pt2_rpplus_accept_tsel"]->Fill( dy_pt2, event_weight );
+								histosTH1F["dy_eta_rpplus_accept_tsel"]->Fill( dy_eta, event_weight );
+								histosTH1F["dy_rapidity_rpplus_accept_tsel"]->Fill( dy_rapidity, event_weight );
+								histosTH1F["muonDeltaPt_dy_rpplus_accept_tsel"]->Fill(deltapt, event_weight );
+								histosTH1F["muonDeltaEta_dy_rpplus_accept_tsel"]->Fill(deltaeta, event_weight );	
+								histosTH1F["muonDeltaPhi_dy_rpplus_accept_tsel"]->Fill(deltaphi, event_weight );
+								histosTH1F["muonDeltaY_dy_rpplus_accept_tsel"]->Fill(deltay, event_weight );  
+								//cout<<"dy_t_plus_rpplus_accept_tsel"<<fabs(t_proton_plus)<<endl;
+								histosTH1F["dy_t_plus_rpplus_accept_tsel"]->Fill( fabs(t_proton_plus), event_weight );
+								histosTH1F["dy_xi_plus_rpplus_accept_tsel"]->Fill( xi_proton_plus, event_weight );
+								histosTH1F["muonDphi_dy_rpplus_accept_tsel"]->Fill(Dphi, event_weight );
+								histosTH2F["dy_DeltaPhi_vs_dimuon_pt_rpplus_accept_tsel"]->Fill(dimuon_pt,deltaphi, event_weight ); 
+							}
+
+							if(proton_plus_xi_range){
+								histosTH1F["t_proton_xi_range_plus_selected"]->Fill( fabs(t_proton_plus) , event_weight );}
+						}
+					}
+					}//sdplus
+					if(sdminus){
+						if( proton_minus_rp_accept  && dimuon_pt <= ptMax){// && xi_proton_minus  < 0.23){
+							histosTH1F["xi_proton_minus_selected"]->Fill( xi_proton_minus , event_weight );
+							histosTH1F["t_proton_minus_selected"]->Fill( fabs(t_proton_minus) , event_weight ); 
+							histosTH2F["proton_minus_xi_vs_t_selected"]->Fill( fabs(t_proton_minus) , xi_proton_minus , event_weight );
+							//dimuons              
+							++n_dimuons_rp_selected_minus_side;	
+
+							histosTH1F["dimuon_mass_rpminus_accept"]->Fill( dimuon_mass, event_weight );
+							histosTH1F["dimuon_pt_rpminus_accept"]->Fill( dimuon_pt, event_weight );
+							histosTH1F["dimuon_pt2_rpminus_accept"]->Fill(dimuon_pt2, event_weight );
+							histosTH1F["dimuon_eta_rpminus_accept"]->Fill( dimuon_eta, event_weight );
+							histosTH1F["dimuon_rapidity_rpminus_accept"]->Fill( dimuon_rapidity, event_weight );
+							histosTH1F["muonDeltaPt_rpminus_accept"]->Fill(deltapt, event_weight );
+							histosTH1F["muonDeltaEta_rpminus_accept"]->Fill(deltaeta, event_weight );	
+							histosTH1F["muonDphi_rpminus_accept"]->Fill(Dphi, event_weight );
+							histosTH1F["muonDeltaPhi_rpminus_accept"]->Fill(deltaphi, event_weight );
+							histosTH1F["muonDeltaY_rpminus_accept"]->Fill(deltay, event_weight ); 
+							histosTH2F["DeltaPhi_vs_dimuon_pt_rpminus_accept"]->Fill(dimuon_pt, deltaphi, event_weight ); 
+
+							//dy
+							if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){  
+
+								//cout<<"dy_mass = "<< dy_mass << endl;
+								++n_dy_selected_rp_accept_minus_side;
+								//First Muon
+								histosTH1F["muon1_pt_rpminus_accept"]->Fill( ptmu1, event_weight );
+
+								histosTH1F["muon1_eta_rpminus_accept"]->Fill( etamu1, event_weight );
+								histosTH1F["muon1_rapidity_rpminus_accept"]->Fill( ymu1, event_weight );
+								histosTH1F["muon1_phi_rpminus_accept"]->Fill(phimu1, event_weight );
+								//Second Muon
+								histosTH1F["muon2_pt_rpminus_accept"]->Fill( ptmu2, event_weight );
+								histosTH1F["muon2_eta_rpminus_accept"]->Fill( etamu2, event_weight );
+								histosTH1F["muon2_rapidity_rpminus_accept"]->Fill( ymu2, event_weight );
+								histosTH1F["muon2_phi_rpminus_accept"]->Fill(phimu2, event_weight );
+
+								histosTH1F["dy_mass_rpminus_accept"]->Fill(dy_mass, event_weight );
+								histosTH1F["dy_pt_rpminus_accept"]->Fill( dy_pt, event_weight );
+								histosTH1F["dy_pt2_rpminus_accept"]->Fill( dy_pt2, event_weight );
+								histosTH1F["dy_eta_rpminus_accept"]->Fill( dy_eta, event_weight );
+								histosTH1F["dy_rapidity_rpminus_accept"]->Fill( dy_rapidity, event_weight );
+								histosTH1F["muonDeltaPt_dy_rpminus_accept"]->Fill(deltapt, event_weight );
+								histosTH1F["muonDeltaEta_dy_rpminus_accept"]->Fill(deltaeta, event_weight );	
+								histosTH1F["muonDeltaPhi_dy_rpminus_accept"]->Fill(deltaphi, event_weight );
+								histosTH1F["muonDeltaY_dy_rpminus_accept"]->Fill(deltay, event_weight );  
+
+								histosTH1F["dy_t_minus_rpminus_accept"]->Fill( fabs(t_proton_minus), event_weight );
+								histosTH1F["dy_xi_minus_rpminus_accept"]->Fill( xi_proton_minus, event_weight );
+								histosTH1F["muonDphi_dy_rpminus_accept"]->Fill(Dphi, event_weight );
+
+								histosTH2F["dy_DeltaPhi_vs_dimuon_pt_rpminus_accept"]->Fill(dimuon_pt,deltaphi, event_weight ); 
+
+							}
+
+
+
+
+							if(proton_minus_t_range){
+								histosTH1F["xi_proton_t_range_minus_selected"]->Fill( xi_proton_minus , event_weight );
+								//----------------------------------------------
+								//dimuons              
+								++n_dimuons_rp_selected_tsel_minus_side;	
+
+								histosTH1F["dimuon_mass_rpminus_accept_tsel"]->Fill( dimuon_mass, event_weight );
+								histosTH1F["dimuon_pt_rpminus_accept_tsel"]->Fill( dimuon_pt, event_weight );
+								histosTH1F["dimuon_pt2_rpminus_accept_tsel"]->Fill(dimuon_pt2, event_weight );
+								histosTH1F["dimuon_eta_rpminus_accept_tsel"]->Fill( dimuon_eta, event_weight );
+								histosTH1F["dimuon_rapidity_rpminus_accept_tsel"]->Fill( dimuon_rapidity, event_weight );
+								histosTH1F["muonDeltaPt_rpminus_accept_tsel"]->Fill(deltapt, event_weight );
+								histosTH1F["muonDeltaEta_rpminus_accept_tsel"]->Fill(deltaeta, event_weight );	
+								histosTH1F["muonDphi_rpminus_accept_tsel"]->Fill(Dphi, event_weight );
+								histosTH1F["muonDeltaPhi_rpminus_accept_tsel"]->Fill(deltaphi, event_weight );
+								histosTH1F["muonDeltaY_rpminus_accept_tsel"]->Fill(deltay, event_weight ); 
+								histosTH2F["DeltaPhi_vs_dimuon_pt_rpminus_accept_tsel"]->Fill(dimuon_pt,deltaphi, event_weight ); 
+
+
+								//dy
+								if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){  
+									//cout<< " rp accept after selection |t| && mass range: "<< " |t| proton minus "<< fabs(t_proton_minus)<<endl;
+									//cout<<"dy_mass = "<< dy_mass << endl;
+									++n_dy_selected_rp_accept_tsel_minus_side;
+
+									histosTH1F["dy_mass_rpminus_accept_tsel"]->Fill(dy_mass, event_weight );
+									histosTH1F["dy_pt_rpminus_accept_tsel"]->Fill( dy_pt, event_weight );
+									histosTH1F["dy_pt2_rpminus_accept_tsel"]->Fill( dy_pt2, event_weight );
+									histosTH1F["dy_eta_rpminus_accept_tsel"]->Fill( dy_eta, event_weight );
+									histosTH1F["dy_rapidity_rpminus_accept_tsel"]->Fill( dy_rapidity, event_weight );
+									histosTH1F["muonDeltaPt_dy_rpminus_accept_tsel"]->Fill(deltapt, event_weight );
+									histosTH1F["muonDeltaEta_dy_rpminus_accept_tsel"]->Fill(deltaeta, event_weight );	
+									histosTH1F["muonDeltaPhi_dy_rpminus_accept_tsel"]->Fill(deltaphi, event_weight );
+									histosTH1F["muonDeltaY_dy_rpminus_accept_tsel"]->Fill(deltay, event_weight );  
+									//cout<<"dy_t_plus_rpminus_accept_tsel"<<fabs(t_proton_minus)<<endl;
+									histosTH1F["dy_t_minus_rpminus_accept_tsel"]->Fill( fabs(t_proton_minus), event_weight );
+									histosTH1F["dy_xi_minus_rpminus_accept_tsel"]->Fill( xi_proton_minus, event_weight );
+									histosTH1F["muonDphi_dy_rpminus_accept_tsel"]->Fill(Dphi, event_weight );
+									histosTH2F["dy_DeltaPhi_vs_dimuon_pt_rpminus_accept_tsel"]->Fill(dimuon_pt,deltaphi, event_weight ); 
+
+								}
+
+
+
+								if(proton_minus_xi_range){
+									histosTH1F["t_proton_xi_range_minus_selected"]->Fill( fabs(t_proton_minus) , event_weight );}
+							}
+						}//sdminus
+						}
+					}
+
+					//-------------------
+					// Detector-level distributions
+					//-------------------
+					histosTH1F["track_multiplicity"]->Fill( n_tracks_selected, event_weight );
+
+					histosTH1F["pf_etaMax"]->Fill( pfEtaMax, event_weight ); 
+					histosTH1F["pf_etaMin"]->Fill( pfEtaMin, event_weight );
+
+					double pfDeltaEta = pfEtaMax - pfEtaMin;
+					histosTH1F["pf_deltaEta"]->Fill( pfDeltaEta, event_weight ); 
+					histosTH1F["vtx_xpos_after"]->Fill( xpos, event_weight );
+					histosTH1F["vtx_ypos_after"]->Fill( ypos, event_weight );
+
+					histosTH1F["pf_EPlusPz"]->Fill( pfEPlusPz, event_weight );
+					histosTH1F["pf_EMinusPz"]->Fill( pfEMinusPz, event_weight );
+					histosTH1F["pf_xiPlus"]->Fill( pfXiPlusReco, event_weight );
+					histosTH1F["pf_xiMinus"]->Fill( pfXiMinusReco, event_weight );
+					histosTH1F["pf_logXiPlus"]->Fill( log10(pfXiPlusReco), event_weight );
+					histosTH1F["pf_logXiMinus"]->Fill( log10(pfXiMinusReco), event_weight );
+
+					histosTH1F["t2_track_multiplicity_zplus"]->Fill( n_t2_tracks_selected_zplus, event_weight );
+					histosTH1F["t2_track_multiplicity_zminus"]->Fill( n_t2_tracks_selected_zminus, event_weight );
+					histosTH2F["t2_track_multiplicity_vs_track_multiplicity"]->Fill( n_tracks_selected, n_t2_tracks_selected, event_weight );
+					/*if( pfJet_coll->size() > 0 ){
+					  MyBaseJet const& leadingJet = ( pfJet_coll->at(0) ).mapjet[ jetCorrName ];
+					  histosTH2F["t2_track_multiplicity_vs_leadingJet_pt"]->Fill( leadingJet.Pt(), n_t2_tracks_selected, event_weight );
 					  }*/
 
+					for(vector<MyPFCand>::iterator it_pfcand = pFlow_coll->begin();
+							it_pfcand != pFlow_coll->end(); ++it_pfcand){
+						int partType = it_pfcand->particleId;
+						double eta = it_pfcand->Eta();
+						double energy = it_pfcand->Energy();
+						histosTH2F["energyVsEtaAllTypes"]->Fill( eta, energy, event_weight );
 
-					//histosTH1F["pf_xiPlus_minus_proton_left_xi"]->Fill( (pfXiPlusReco + xi_proton_left), event_weight );
-					if (pfXiPlusReco>0.12){
-						if(verbose)cout<<"2127-pfXiPlusReco>0.11"<<endl;
-						xi_totem_left_cut = -xi_proton_left;
-						histosTH1F["proton_left_xi_totem"]->Fill(xi_totem_left_cut, event_weight );
-						histosTH1F["pf_xiPlus_minus_proton_left_xi"]->Fill( (pfXiPlusReco + xi_proton_left), event_weight );
+						if(partType == MyPFCand::X)
+							histosTH2F["energyVsEtaUndefined"]->Fill( eta, energy, event_weight );
+						else if(partType == MyPFCand::h)
+							histosTH2F["energyVsEtaChargedHadron"]->Fill( eta, energy, event_weight ); 
+						else if(partType == MyPFCand::e) 
+							histosTH2F["energyVsEtaElectron"]->Fill( eta, energy, event_weight );
+						else if(partType == MyPFCand::mu) 
+							histosTH2F["energyVsEtaMuon"]->Fill( eta, energy, event_weight );
+						else if(partType == MyPFCand::gamma) 
+							histosTH2F["energyVsEtaGamma"]->Fill( eta, energy, event_weight );
+						else if(partType == MyPFCand::h0) 
+							histosTH2F["energyVsEtaNeutralHadron"]->Fill( eta, energy, event_weight );
+						else if(partType == MyPFCand::h_HF){ 
+							histosTH2F["energyVsEtaHadronHF"]->Fill( eta, energy, event_weight );
+							/*if( part->ecalEnergy() > 0. ) histosTH2F["energyVsEtaHadronHFEcalEnergy"]->Fill( eta, energy, event_weight );
+							  else                          histosTH2F["energyVsEtaHadronHFNoEcalEnergy"]->Fill( eta, energy, event_weight );*/
+						} else if(partType == MyPFCand::egamma_HF) 
+							histosTH2F["energyVsEtaEGammaHF"]->Fill( eta, energy, event_weight );
 					}
-					histosTH1F["pfxiPlus_minus_proton_left_xi"]->Fill( (pfXiPlusReco + xi_proton_left), event_weight );
-					//double xi_totem_left = histosTH1F["proton_left_xi_totem"]->GetRandom(); 
-					//histosTH1F["random_xi_totem_left"]->Fill(xi_totem_left,event_weight);
-					//histosTH1F["random_pfxiPlus_minus_proton_left_xi"]->Fill( (xi_cms_plus - xi_totem_left), event_weight );
 
-					//if(verbose)cout<<"(pfXiPlusReco - xi_proton_left) = "<< (pfXiPlusReco - xi_proton_left)<<endl;
-					if( (pfXiPlusReco + xi_proton_left) < 0. ){
-						//select_proton_plus = true;
-						++nevtxisignalleft;
-						if(verbose)cout<<"2132 - (pfXiPlusReco - xi_proton_left) < 0.  "<<endl;
-						//histosTH1F["proton_left_xi_selected"]->Fill( -xi_proton_left, event_weight );
-						//histosTH1F["proton_left_t_selected"]->Fill( -t_proton_left, event_weight );
-					}
-				}
-				bool proton_pair_valid = rec_proton_pair->valid;
-				double chi2_proton_pair = rec_proton_pair->chi2;
-				//double chindf_proton_pair = rec_proton_pair->chindf;
-				double xi_proton_pair_right = rec_proton_pair->xir;
-				double xi_proton_pair_left = rec_proton_pair->xil;
-				//bool good_proton_pair = proton_pair_valid && (chi2_proton_pair/chindf_proton_pair > 2);
-				bool good_proton_pair = proton_pair_valid; //&& (-0.23< xi_proton_right < 0.04) && (-0.23< xi_proton_left < 0.04);
-				if( good_proton_pair ){
-					histosTH1F["proton_pair_chi2"]->Fill( chi2_proton_pair, event_weight );
-					//double xi_proton_pair_right = rec_proton_pair->xir;
-					double t_proton_pair_right = rec_proton_pair->tr;
-					histosTH1F["proton_pair_right_xi"]->Fill( -xi_proton_pair_right, event_weight );
-					histosTH1F["proton_pair_right_t"]->Fill( -t_proton_pair_right, event_weight );
-					if(-xi_proton_pair_right > 0.)
-						histosTH1F["proton_pair_right_logXi"]->Fill( log10(-xi_proton_pair_right), event_weight );
-					/*if(xi_proton_pair_right > 0.)
-					  histosTH1F["proton_pair_right_logXi"]->Fill( log10(xi_proton_pair_right), event_weight );*/
-
-					//double xi_proton_pair_left = rec_proton_pair->xil;
-					double t_proton_pair_left = rec_proton_pair->tl;
-					histosTH1F["proton_pair_left_xi"]->Fill( -xi_proton_pair_left, event_weight );
-					histosTH1F["proton_pair_left_t"]->Fill( -t_proton_pair_left, event_weight );
-					if(-xi_proton_pair_left > 0.){
-						histosTH1F["proton_pair_left_logXi"]->Fill( log10(-xi_proton_pair_left), event_weight );  }
-					/*if(xi_proton_pair_left > 0.)
-					  histosTH1F["proton_pair_left_logXi"]->Fill( log10(xi_proton_pair_left), event_weight );*/
-					/*if( selectRPProton && !(select_proton_minus || select_proton_plus) ) continue;
-					  histosTH1F["EventSelection"]->Fill( "RPProton", event_weight );*/
-
-				}
-
-				//-------------------
-				// After selection 
-				//-------------------
-				if( good_proton_right && dimuon_pt <= ptMax ){
-					n_dimuons_proton_right++;
-					//double t_proton_right = rec_proton_right->t;
-					//	cout<< "ptmu1: "<< ptmu1<< endl;
-					//First muon
-					histosTH1F["muon1_pt_proton_right"]->Fill( ptmu1, event_weight );
-					histosTH1F["muon1_eta_proton_right"]->Fill( etamu1, event_weight );
-					histosTH1F["muon1_rapidity_proton_right"]->Fill( ymu1, event_weight );
-					histosTH1F["muon1_phi_proton_right"]->Fill(phimu1, event_weight );
-					//Second Muon
-					histosTH1F["muon2_pt_proton_right"]->Fill( ptmu2, event_weight );
-					histosTH1F["muon2_eta_proton_right"]->Fill( etamu2, event_weight );
-					histosTH1F["muon2_rapidity_proton_right"]->Fill( ymu2, event_weight );
-					histosTH1F["muon2_phi_proton_right"]->Fill(phimu2, event_weight );
-
-					//
-					histosTH1F["dimuon_proton_right_xi"]->Fill( -xi_proton_right, event_weight );
-					histosTH1F["dimuon_proton_right_t"]->Fill( fabs(t_proton_right), event_weight );
-
-					histosTH1F["dimuon_mass_proton_right"]->Fill( dimuon_mass, event_weight );
-					histosTH1F["dimuon_pt_proton_right"]->Fill( dimuon_pt, event_weight );
-					histosTH1F["dimuon_pt2_proton_right"]->Fill( dimuon_pt2, event_weight );
-					histosTH1F["dimuon_eta_proton_right"]->Fill( dimuon_eta, event_weight );
-					histosTH1F["dimuon_rapidity_proton_right"]->Fill( dimuon_rapidity, event_weight );			
-					histosTH1F["muonDeltaPt_proton_right"]->Fill(deltapt, event_weight );
-					histosTH1F["muonDeltaEta_proton_right"]->Fill(deltaeta, event_weight );
-					histosTH1F["muonDeltaPhi_proton_right"]->Fill(deltaphi, event_weight );
-					histosTH1F["muonDeltaY_proton_right"]->Fill(deltay, event_weight );
-					histosTH2F["DeltaPhi_vs_dimuon_pt_proton_right"]->Fill(dimuon_pt,deltaphi, event_weight );
-
-					if (fabs(t_proton_right)>=t_proton_down_ && fabs(t_proton_right)<t_proton_up_){
-						//if(proton_plus_t_range){
-						n_dimuons_t_selected_proton_right++;
-						if(verbose) cout<< "t proton right side (abs):"<< "["<< fabs(t_proton_right)<< "]"<< endl;
-
-						histosTH1F["dimuon_mass_t_cut_proton_right"]->Fill( dimuon_mass, event_weight );
-						histosTH1F["dimuon_pt_t_cut_proton_right"]->Fill(dimuon_pt , event_weight );
-
-						histosTH1F["dimuon_pt2_t_cut_proton_right"]->Fill( dimuon_pt2, event_weight );
-						histosTH1F["dimuon_eta_t_cut_proton_right"]->Fill( dimuon_eta, event_weight );
-						histosTH1F["dimuon_rapidity_t_cut_proton_right"]->Fill( dimuon_rapidity, event_weight );
-						histosTH1F["proton_right_xi_t_cut"]->Fill( xi_proton_right, event_weight );
-						histosTH1F["proton_right_t_t_cut"]->Fill( fabs(t_proton_right), event_weight );
-						histosTH1F["muonDeltaPt_t_cut_proton_right"]->Fill(deltapt, event_weight );
-						histosTH1F["muonDeltaEta_t_cut_proton_right"]->Fill(deltaeta, event_weight );	
-						histosTH1F["muonDeltaPhi_t_cut_proton_right"]->Fill(deltaphi, event_weight );
-						histosTH1F["muonDeltaY_t_cut_proton_right"]->Fill(deltay, event_weight ); 
-						histosTH2F["DeltaPhi_vs_dimuon_pt_t_cut_proton_right"]->Fill(dimuon_pt,deltaphi, event_weight );
-
-
-
-					}
-					}
-					if( good_proton_left  && dimuon_pt <= ptMax){
-						n_dimuons_proton_left++;
-						//double t_proton_left = rec_proton_left->t;
-						//First muon
-						//	 cout<< "ptmu1: "<< ptmu1<< endl;
-						histosTH1F["muon1_pt_proton_left"]->Fill( ptmu1, event_weight );
-						histosTH1F["muon1_eta_proton_left"]->Fill( etamu1, event_weight );
-						histosTH1F["muon1_rapidity_proton_left"]->Fill( ymu1, event_weight );
-						histosTH1F["muon1_phi_proton_left"]->Fill(phimu1, event_weight );
-						//Second Muon
-						histosTH1F["muon2_pt_proton_left"]->Fill( ptmu2, event_weight );
-						histosTH1F["muon2_eta_proton_left"]->Fill( etamu2, event_weight );
-						histosTH1F["muon2_rapidity_proton_left"]->Fill( ymu2, event_weight );
-						histosTH1F["muon2_phi_proton_left"]->Fill(phimu2, event_weight );
-
-						histosTH1F["dimuon_proton_left_xi"]->Fill( -xi_proton_left, event_weight );
-						histosTH1F["dimuon_proton_left_t"]->Fill( fabs(t_proton_left), event_weight ); 
-
-						histosTH1F["dimuon_mass_proton_left"]->Fill( dimuon_mass, event_weight );
-						histosTH1F["dimuon_pt_proton_left"]->Fill( dimuon_pt, event_weight );
-						histosTH1F["dimuon_pt2_proton_left"]->Fill( dimuon_pt2, event_weight );
-						histosTH1F["dimuon_eta_proton_left"]->Fill( dimuon_eta, event_weight );
-						histosTH1F["dimuon_rapidity_proton_left"]->Fill( dimuon_rapidity, event_weight );
-						histosTH1F["muonDeltaPt_proton_left"]->Fill(deltapt, event_weight );
-						histosTH1F["muonDeltaEta_proton_left"]->Fill(deltaeta, event_weight );
-						histosTH1F["muonDeltaPhi_proton_left"]->Fill(deltaphi, event_weight );
-						histosTH1F["muonDeltaY_proton_left"]->Fill(deltay, event_weight );
-						histosTH2F["DeltaPhi_vs_dimuon_pt_proton_left"]->Fill(dimuon_pt,deltaphi, event_weight );
-
-						if (fabs(t_proton_left)>=t_proton_down_ && fabs(t_proton_left)<t_proton_up_){
-							//if(proton_minus_t_range){
-							n_dimuons_t_selected_proton_left++;	
-							if(verbose) cout<< "t proton left side (abs):"<< "["<< fabs(t_proton_left)<< "]"<< endl;
-
-
-							histosTH1F["dimuon_mass_t_cut_proton_left"]->Fill( dimuon_mass, event_weight );
-							histosTH1F["dimuon_pt_t_cut_proton_left"]->Fill( dimuon_pt, event_weight );
-							histosTH1F["dimuon_pt2_t_cut_proton_left"]->Fill(dimuon_pt2, event_weight );
-
-							histosTH1F["dimuon_eta_t_cut_proton_left"]->Fill( dimuon_eta, event_weight );
-							histosTH1F["dimuon_rapidity_t_cut_proton_left"]->Fill( dimuon_rapidity, event_weight );
-							histosTH1F["proton_left_xi_t_cut"]->Fill( -xi_proton_left, event_weight );
-							histosTH1F["proton_left_t_t_cut"]->Fill( fabs(t_proton_left), event_weight );
-							histosTH1F["muonDeltaPt_t_cut_proton_left"]->Fill(deltapt, event_weight );
-							histosTH1F["muonDeltaEta_t_cut_proton_left"]->Fill(deltaeta, event_weight );	
-							histosTH1F["muonDeltaPhi_t_cut_proton_left"]->Fill(deltaphi, event_weight );
-							histosTH1F["muonDeltaY_t_cut_proton_left"]->Fill(deltay, event_weight ); 
-							histosTH2F["DeltaPhi_vs_dimuon_pt_t_cut_proton_left"]->Fill(dimuon_pt,deltaphi, event_weight );
-
-
-
-						}
-						}
-						/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-						if( good_proton_right  && dimuon_pt <= ptMax){
-							if((dimuon_mass >low_Bin) && (dimuon_mass < high_Bin)){
-
-								n_dy_proton_right++;
-								//double t_proton_right = rec_proton_right->t;
-								histosTH1F["dy_proton_right_xi"]->Fill( -xi_proton_right, event_weight );
-								histosTH1F["dy_proton_right_t"]->Fill( fabs(t_proton_right), event_weight );
-
-								//histosTH1F["dy_multiplicity_proton_right"]->Fill(n_dimuons_selected, event_weight );
-								histosTH1F["dy_mass_proton_right"]->Fill( dimuon_mass, event_weight );
-								histosTH1F["dy_pt_proton_right"]->Fill( dimuon_pt, event_weight );
-								histosTH1F["dy_pt2_proton_right"]->Fill( dimuon_pt2, event_weight );
-								histosTH1F["dy_eta_proton_right"]->Fill( dimuon_eta, event_weight );
-								histosTH1F["dy_rapidity_proton_right"]->Fill( dimuon_rapidity, event_weight );
-								histosTH1F["muonDeltaPt_dy_proton_right"]->Fill(deltapt, event_weight );
-								histosTH1F["muonDeltaEta_dy_proton_right"]->Fill(deltaeta, event_weight );
-								histosTH1F["muonDeltaPhi_dy_proton_right"]->Fill(deltaphi, event_weight );
-								histosTH1F["muonDeltaY_dy_proton_right"]->Fill(deltay, event_weight );
-								histosTH2F["dy_DeltaPhi_vs_dimuon_pt_proton_right"]->Fill(dimuon_pt,deltaphi, event_weight );
-
-								if (fabs(t_proton_right)>=t_proton_down_ && fabs(t_proton_right)<t_proton_up_){
-									//if(proton_plus_t_range){
-									n_dy_t_selected_proton_right++;
-									if(verbose) cout<< "t proton right side (abs):"<< "["<< fabs(t_proton_right)<< "]"<< endl;
-									outstring_right << evtId->Run << ":"<< evtId->LumiSect << ":"<< evtId->Evt << endl;
-
-									histosTH1F["dy_dimuon_mass_t_cut_proton_right"]->Fill( dimuon_mass, event_weight );
-									histosTH1F["dy_dimuon_pt_t_cut_proton_right"]->Fill( dimuon_pt, event_weight );
-									histosTH1F["dy_dimuon_pt2_t_cut_proton_right"]->Fill( dimuon_pt2, event_weight );
-									histosTH1F["dy_dimuon_eta_t_cut_proton_right"]->Fill( dimuon_eta, event_weight );
-									histosTH1F["dy_dimuon_rapidity_t_cut_proton_right"]->Fill( dimuon_rapidity, event_weight );
-									histosTH1F["dy_proton_right_xi_t_cut"]->Fill( -xi_proton_right, event_weight );
-									histosTH1F["dy_proton_right_t_t_cut"]->Fill( fabs(t_proton_right), event_weight );
-									histosTH1F["muonDeltaPt_dy_t_cut_proton_right"]->Fill(deltapt, event_weight );
-									histosTH1F["muonDeltaEta_dy_t_cut_proton_right"]->Fill(deltaeta, event_weight );
-									histosTH1F["muonDeltaPhi_dy_t_cut_proton_right"]->Fill(deltaphi, event_weight );
-									histosTH1F["muonDeltaY_dy_t_cut_proton_right"]->Fill(deltay, event_weight );
-									histosTH2F["dy_DeltaPhi_vs_dimuon_pt_t_cut_proton_right"]->Fill(dimuon_pt,deltaphi, event_weight );
-
-								} // t right proton
-								} // right proton
-							} //dy mass
-							if( good_proton_left  && dimuon_pt <= ptMax){
-								if((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin)){
-									n_dy_proton_left++;
-									//double t_proton_left = rec_proton_left->t;
-
-									histosTH1F["dy_proton_left_xi"]->Fill(-xi_proton_left, event_weight );
-									histosTH1F["dy_proton_left_t"]->Fill( fabs(t_proton_left), event_weight );
-
-									histosTH1F["dy_mass_proton_left"]->Fill( dimuon_mass, event_weight );
-									histosTH1F["dy_pt_proton_left"]->Fill( dimuon_pt, event_weight );
-									histosTH1F["dy_pt2_proton_left"]->Fill( dimuon_pt2, event_weight );
-									histosTH1F["dy_eta_proton_left"]->Fill( dimuon_eta, event_weight );
-									histosTH1F["dy_rapidity_proton_left"]->Fill( dimuon_rapidity, event_weight );
-									histosTH1F["muonDeltaPt_dy_proton_left"]->Fill(deltapt, event_weight );
-									histosTH1F["muonDeltaEta_dy_proton_left"]->Fill(deltaeta, event_weight );
-									histosTH1F["muonDeltaPhi_dy_proton_left"]->Fill(deltaphi, event_weight );
-									histosTH1F["muonDeltaY_dy_proton_left"]->Fill(deltay, event_weight );   
-
-									histosTH2F["dy_DeltaPhi_vs_dimuon_pt_proton_left"]->Fill(dimuon_pt, deltaphi, event_weight );                    			
-
-									if (fabs(t_proton_left)>=t_proton_down_ && fabs(t_proton_left)<t_proton_up_){
-										//if(proton_minus_t_range){
-										n_dy_t_selected_proton_left++;
-										outstring_left << evtId->Run << ":"<< evtId->LumiSect << ":"<< evtId->Evt << endl;
-
-										if(verbose) cout<< "t proton left side (abs):"<< "["<< fabs(t_proton_left)<< "]"<< endl;
-
-
-										histosTH1F["dy_dimuon_mass_t_cut_proton_left"]->Fill( dimuon_mass, event_weight );
-										histosTH1F["dy_dimuon_pt_t_cut_proton_left"]->Fill( dimuon_pt, event_weight );
-										histosTH1F["dy_dimuon_pt2_t_cut_proton_left"]->Fill( dimuon_pt2, event_weight );
-										histosTH1F["dy_dimuon_eta_t_cut_proton_left"]->Fill( dimuon_eta, event_weight );
-										histosTH1F["dy_dimuon_rapidity_t_cut_proton_left"]->Fill( dimuon_rapidity, event_weight );
-										histosTH1F["dy_proton_left_xi_t_cut"]->Fill( -xi_proton_left, event_weight );
-										histosTH1F["dy_proton_left_t_t_cut"]->Fill( fabs(t_proton_left), event_weight );
-
-										histosTH1F["muonDeltaPt_dy_t_cut_proton_left"]->Fill(deltapt, event_weight );
-										histosTH1F["muonDeltaEta_dy_t_cut_proton_left"]->Fill(deltaeta, event_weight );
-										histosTH1F["muonDeltaPhi_dy_t_cut_proton_left"]->Fill(deltaphi, event_weight );
-										histosTH1F["muonDeltaY_dy_t_cut_proton_left"]->Fill(deltay, event_weight );
-
-										histosTH2F["dy_DeltaPhi_vs_dimuon_pt_t_cut_proton_left"]->Fill(dimuon_pt,deltaphi, event_weight );
-
-
-									} // t, proton left
-									} // good proton left
-								}//dy mass
-
-
-							} //!isMC
-							//===========================================================================
-							//-------------------
-							// After selection 
-							//-------------------
-
-							//-------------------
-							// Generator-level proton distributions
-							//-------------------
-							if(isMC){
-								if( selectRPPlusAccept && !proton_plus_rp_accept ) continue;
-								histosTH1F["EventSelection"]->Fill( "MCRPPlusAccept", event_weight );
-
-								if( selectRPMinusAccept && !proton_minus_rp_accept ) continue;
-								histosTH1F["EventSelection"]->Fill( "MCRPMinusAccept", event_weight );
-								if(sdplus){
-									if( proton_plus_rp_accept  && dimuon_pt <= ptMax ){//&& xi_proton_plus < 0.23){
-										histosTH1F["xi_proton_plus_selected"]->Fill( xi_proton_plus , event_weight );
-										histosTH1F["t_proton_plus_selected"]->Fill( fabs(t_proton_plus) , event_weight ); 
-										histosTH2F["proton_plus_xi_vs_t_selected"]->Fill( fabs(t_proton_plus) , xi_proton_plus , event_weight );
-										//dimuons              
-										++n_dimuons_rp_selected_plus_side;	
-										//histosTH1F["dimuon_multiplicity_rp_accept"]->Fill(n_dimuons_rp_selected_plus_side, event_weight );
-										histosTH1F["dimuon_mass_rpplus_accept"]->Fill( dimuon_mass, event_weight );
-										histosTH1F["dimuon_pt_rpplus_accept"]->Fill( dimuon_pt, event_weight );
-										histosTH1F["dimuon_pt2_rpplus_accept"]->Fill(dimuon_pt2, event_weight );
-										histosTH1F["dimuon_eta_rpplus_accept"]->Fill( dimuon_eta, event_weight );
-										histosTH1F["dimuon_rapidity_rpplus_accept"]->Fill( dimuon_rapidity, event_weight );
-										histosTH1F["muonDeltaPt_rpplus_accept"]->Fill(deltapt, event_weight );
-										histosTH1F["muonDeltaEta_rpplus_accept"]->Fill(deltaeta, event_weight );	
-										histosTH1F["muonDphi_rpplus_accept"]->Fill(Dphi, event_weight );
-										histosTH1F["muonDeltaPhi_rpplus_accept"]->Fill(deltaphi, event_weight );
-										histosTH1F["muonDeltaY_rpplus_accept"]->Fill(deltay, event_weight );
-										histosTH2F["DeltaPhi_vs_dimuon_pt_rpplus_accept"]->Fill(dimuon_pt, deltaphi, event_weight ); 
-										//i
-										//cout<< "ptmu1: "<< ptmu1<< endl;		
-										//First Muon
-										histosTH1F["muon1_pt_rpplus_accept"]->Fill( ptmu1, event_weight );
-
-										histosTH1F["muon1_eta_rpplus_accept"]->Fill( etamu1, event_weight );
-										histosTH1F["muon1_rapidity_rpplus_accept"]->Fill( ymu1, event_weight );
-										histosTH1F["muon1_phi_rpplus_accept"]->Fill(phimu1, event_weight );
-										//Second Muon
-										histosTH1F["muon2_pt_rpplus_accept"]->Fill( ptmu2, event_weight );
-										histosTH1F["muon2_eta_rpplus_accept"]->Fill( etamu2, event_weight );
-										histosTH1F["muon2_rapidity_rpplus_accept"]->Fill( ymu2, event_weight );
-										histosTH1F["muon2_phi_rpplus_accept"]->Fill(phimu2, event_weight );	
-
-										//dy
-										if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){  
-
-											// cout<<"dy_mass = "<< dy_mass << endl;
-											//++n_dy_rp_accept_selected;
-											++n_dy_selected_rp_accept_plus_side;
-											//histosTH1F["dy_multiplicity_rp_accept"]->Fill(n_dimuons_selected, event_weight );
-											histosTH1F["dy_mass_rpplus_accept"]->Fill(dy_mass, event_weight );
-											histosTH1F["dy_pt_rpplus_accept"]->Fill( dy_pt, event_weight );
-											histosTH1F["dy_pt2_rpplus_accept"]->Fill( dy_pt2, event_weight );
-											histosTH1F["dy_eta_rpplus_accept"]->Fill( dy_eta, event_weight );
-											histosTH1F["dy_rapidity_rpplus_accept"]->Fill( dy_rapidity, event_weight );
-											histosTH1F["muonDeltaPt_dy_rpplus_accept"]->Fill(deltapt, event_weight );
-											histosTH1F["muonDeltaEta_dy_rpplus_accept"]->Fill(deltaeta, event_weight );	
-											histosTH1F["muonDeltaPhi_dy_rpplus_accept"]->Fill(deltaphi, event_weight );
-											histosTH1F["muonDeltaY_dy_rpplus_accept"]->Fill(deltay, event_weight );  
-
-											histosTH1F["dy_t_plus_rpplus_accept"]->Fill( fabs(t_proton_plus), event_weight );
-											histosTH1F["dy_xi_plus_rpplus_accept"]->Fill( xi_proton_plus, event_weight );
-											histosTH1F["muonDphi_dy_rpplus_accept"]->Fill(Dphi, event_weight );
-											histosTH2F["dy_DeltaPhi_vs_dimuon_pt_rpplus_accept"]->Fill(dimuon_pt, deltaphi,event_weight ); 
-
-										}
-
-										if(proton_plus_t_range){
-											histosTH1F["xi_proton_t_range_plus_selected"]->Fill( xi_proton_plus , event_weight );
-											//----------------------------------------------
-											//dimuons              
-											++n_dimuons_rp_selected_tsel_plus_side;	
-											//histosTH1F["dimuon_multiplicity_rp_accept"]->Fill(n_dimuons_rp_selected_plus_side, event_weight );
-											histosTH1F["dimuon_mass_rpplus_accept_tsel"]->Fill( dimuon_mass, event_weight );
-											histosTH1F["dimuon_pt_rpplus_accept_tsel"]->Fill( dimuon_pt, event_weight );
-											histosTH1F["dimuon_pt2_rpplus_accept_tsel"]->Fill(dimuon_pt2, event_weight );
-											histosTH1F["dimuon_eta_rpplus_accept_tsel"]->Fill( dimuon_eta, event_weight );
-											histosTH1F["dimuon_rapidity_rpplus_accept_tsel"]->Fill( dimuon_rapidity, event_weight );
-											histosTH1F["muonDeltaPt_rpplus_accept_tsel"]->Fill(deltapt, event_weight );
-											histosTH1F["muonDeltaEta_rpplus_accept_tsel"]->Fill(deltaeta, event_weight );	
-											histosTH1F["muonDphi_rpplus_accept_tsel"]->Fill(Dphi, event_weight );
-											histosTH1F["muonDeltaPhi_rpplus_accept_tsel"]->Fill(deltaphi, event_weight );
-											histosTH1F["muonDeltaY_rpplus_accept_tsel"]->Fill(deltay, event_weight ); 
-											histosTH2F["DeltaPhi_vs_dimuon_pt_rpplus_accept_tsel"]->Fill(dimuon_pt, deltaphi, event_weight ); 
-
-											//dy
-											if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){  
-												//cout<< " rp accept after selection |t| && mass range: "<< " |t| proton plus "<< fabs(t_proton_plus)<<endl;
-												//cout<<"dy_mass = "<< dy_mass << endl;
-												++n_dy_selected_rp_accept_tsel_plus_side;
-												//histosTH1F["dy_multiplicity_rp_accept"]->Fill(n_dimuons_selected, event_weight );
-												histosTH1F["dy_mass_rpplus_accept_tsel"]->Fill(dy_mass, event_weight );
-												histosTH1F["dy_pt_rpplus_accept_tsel"]->Fill( dy_pt, event_weight );
-												histosTH1F["dy_pt2_rpplus_accept_tsel"]->Fill( dy_pt2, event_weight );
-												histosTH1F["dy_eta_rpplus_accept_tsel"]->Fill( dy_eta, event_weight );
-												histosTH1F["dy_rapidity_rpplus_accept_tsel"]->Fill( dy_rapidity, event_weight );
-												histosTH1F["muonDeltaPt_dy_rpplus_accept_tsel"]->Fill(deltapt, event_weight );
-												histosTH1F["muonDeltaEta_dy_rpplus_accept_tsel"]->Fill(deltaeta, event_weight );	
-												histosTH1F["muonDeltaPhi_dy_rpplus_accept_tsel"]->Fill(deltaphi, event_weight );
-												histosTH1F["muonDeltaY_dy_rpplus_accept_tsel"]->Fill(deltay, event_weight );  
-												//cout<<"dy_t_plus_rpplus_accept_tsel"<<fabs(t_proton_plus)<<endl;
-												histosTH1F["dy_t_plus_rpplus_accept_tsel"]->Fill( fabs(t_proton_plus), event_weight );
-												histosTH1F["dy_xi_plus_rpplus_accept_tsel"]->Fill( xi_proton_plus, event_weight );
-												histosTH1F["muonDphi_dy_rpplus_accept_tsel"]->Fill(Dphi, event_weight );
-												histosTH2F["dy_DeltaPhi_vs_dimuon_pt_rpplus_accept_tsel"]->Fill(dimuon_pt,deltaphi, event_weight ); 
-											}
-
-											if(proton_plus_xi_range){
-												histosTH1F["t_proton_xi_range_plus_selected"]->Fill( fabs(t_proton_plus) , event_weight );}
-										}
-									}
-									}//sdplus
-									if(sdminus){
-										if( proton_minus_rp_accept  && dimuon_pt <= ptMax){// && xi_proton_minus  < 0.23){
-											histosTH1F["xi_proton_minus_selected"]->Fill( xi_proton_minus , event_weight );
-											histosTH1F["t_proton_minus_selected"]->Fill( fabs(t_proton_minus) , event_weight ); 
-											histosTH2F["proton_minus_xi_vs_t_selected"]->Fill( fabs(t_proton_minus) , xi_proton_minus , event_weight );
-											//dimuons              
-											++n_dimuons_rp_selected_minus_side;	
-
-											histosTH1F["dimuon_mass_rpminus_accept"]->Fill( dimuon_mass, event_weight );
-											histosTH1F["dimuon_pt_rpminus_accept"]->Fill( dimuon_pt, event_weight );
-											histosTH1F["dimuon_pt2_rpminus_accept"]->Fill(dimuon_pt2, event_weight );
-											histosTH1F["dimuon_eta_rpminus_accept"]->Fill( dimuon_eta, event_weight );
-											histosTH1F["dimuon_rapidity_rpminus_accept"]->Fill( dimuon_rapidity, event_weight );
-											histosTH1F["muonDeltaPt_rpminus_accept"]->Fill(deltapt, event_weight );
-											histosTH1F["muonDeltaEta_rpminus_accept"]->Fill(deltaeta, event_weight );	
-											histosTH1F["muonDphi_rpminus_accept"]->Fill(Dphi, event_weight );
-											histosTH1F["muonDeltaPhi_rpminus_accept"]->Fill(deltaphi, event_weight );
-											histosTH1F["muonDeltaY_rpminus_accept"]->Fill(deltay, event_weight ); 
-											histosTH2F["DeltaPhi_vs_dimuon_pt_rpminus_accept"]->Fill(dimuon_pt, deltaphi, event_weight ); 
-
-											//dy
-											if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){  
-
-												//cout<<"dy_mass = "<< dy_mass << endl;
-												++n_dy_selected_rp_accept_minus_side;
-												//First Muon
-												histosTH1F["muon1_pt_rpminus_accept"]->Fill( ptmu1, event_weight );
-
-												histosTH1F["muon1_eta_rpminus_accept"]->Fill( etamu1, event_weight );
-												histosTH1F["muon1_rapidity_rpminus_accept"]->Fill( ymu1, event_weight );
-												histosTH1F["muon1_phi_rpminus_accept"]->Fill(phimu1, event_weight );
-												//Second Muon
-												histosTH1F["muon2_pt_rpminus_accept"]->Fill( ptmu2, event_weight );
-												histosTH1F["muon2_eta_rpminus_accept"]->Fill( etamu2, event_weight );
-												histosTH1F["muon2_rapidity_rpminus_accept"]->Fill( ymu2, event_weight );
-												histosTH1F["muon2_phi_rpminus_accept"]->Fill(phimu2, event_weight );
-
-												histosTH1F["dy_mass_rpminus_accept"]->Fill(dy_mass, event_weight );
-												histosTH1F["dy_pt_rpminus_accept"]->Fill( dy_pt, event_weight );
-												histosTH1F["dy_pt2_rpminus_accept"]->Fill( dy_pt2, event_weight );
-												histosTH1F["dy_eta_rpminus_accept"]->Fill( dy_eta, event_weight );
-												histosTH1F["dy_rapidity_rpminus_accept"]->Fill( dy_rapidity, event_weight );
-												histosTH1F["muonDeltaPt_dy_rpminus_accept"]->Fill(deltapt, event_weight );
-												histosTH1F["muonDeltaEta_dy_rpminus_accept"]->Fill(deltaeta, event_weight );	
-												histosTH1F["muonDeltaPhi_dy_rpminus_accept"]->Fill(deltaphi, event_weight );
-												histosTH1F["muonDeltaY_dy_rpminus_accept"]->Fill(deltay, event_weight );  
-
-												histosTH1F["dy_t_minus_rpminus_accept"]->Fill( fabs(t_proton_minus), event_weight );
-												histosTH1F["dy_xi_minus_rpminus_accept"]->Fill( xi_proton_minus, event_weight );
-												histosTH1F["muonDphi_dy_rpminus_accept"]->Fill(Dphi, event_weight );
-
-												histosTH2F["dy_DeltaPhi_vs_dimuon_pt_rpminus_accept"]->Fill(dimuon_pt,deltaphi, event_weight ); 
-
-											}
-
-
-
-
-											if(proton_minus_t_range){
-												histosTH1F["xi_proton_t_range_minus_selected"]->Fill( xi_proton_minus , event_weight );
-												//----------------------------------------------
-												//dimuons              
-												++n_dimuons_rp_selected_tsel_minus_side;	
-
-												histosTH1F["dimuon_mass_rpminus_accept_tsel"]->Fill( dimuon_mass, event_weight );
-												histosTH1F["dimuon_pt_rpminus_accept_tsel"]->Fill( dimuon_pt, event_weight );
-												histosTH1F["dimuon_pt2_rpminus_accept_tsel"]->Fill(dimuon_pt2, event_weight );
-												histosTH1F["dimuon_eta_rpminus_accept_tsel"]->Fill( dimuon_eta, event_weight );
-												histosTH1F["dimuon_rapidity_rpminus_accept_tsel"]->Fill( dimuon_rapidity, event_weight );
-												histosTH1F["muonDeltaPt_rpminus_accept_tsel"]->Fill(deltapt, event_weight );
-												histosTH1F["muonDeltaEta_rpminus_accept_tsel"]->Fill(deltaeta, event_weight );	
-												histosTH1F["muonDphi_rpminus_accept_tsel"]->Fill(Dphi, event_weight );
-												histosTH1F["muonDeltaPhi_rpminus_accept_tsel"]->Fill(deltaphi, event_weight );
-												histosTH1F["muonDeltaY_rpminus_accept_tsel"]->Fill(deltay, event_weight ); 
-												histosTH2F["DeltaPhi_vs_dimuon_pt_rpminus_accept_tsel"]->Fill(dimuon_pt,deltaphi, event_weight ); 
-
-
-												//dy
-												if(((dimuon_mass > low_Bin) && (dimuon_mass < high_Bin))){  
-													//cout<< " rp accept after selection |t| && mass range: "<< " |t| proton minus "<< fabs(t_proton_minus)<<endl;
-													//cout<<"dy_mass = "<< dy_mass << endl;
-													++n_dy_selected_rp_accept_tsel_minus_side;
-
-													histosTH1F["dy_mass_rpminus_accept_tsel"]->Fill(dy_mass, event_weight );
-													histosTH1F["dy_pt_rpminus_accept_tsel"]->Fill( dy_pt, event_weight );
-													histosTH1F["dy_pt2_rpminus_accept_tsel"]->Fill( dy_pt2, event_weight );
-													histosTH1F["dy_eta_rpminus_accept_tsel"]->Fill( dy_eta, event_weight );
-													histosTH1F["dy_rapidity_rpminus_accept_tsel"]->Fill( dy_rapidity, event_weight );
-													histosTH1F["muonDeltaPt_dy_rpminus_accept_tsel"]->Fill(deltapt, event_weight );
-													histosTH1F["muonDeltaEta_dy_rpminus_accept_tsel"]->Fill(deltaeta, event_weight );	
-													histosTH1F["muonDeltaPhi_dy_rpminus_accept_tsel"]->Fill(deltaphi, event_weight );
-													histosTH1F["muonDeltaY_dy_rpminus_accept_tsel"]->Fill(deltay, event_weight );  
-													//cout<<"dy_t_plus_rpminus_accept_tsel"<<fabs(t_proton_minus)<<endl;
-													histosTH1F["dy_t_minus_rpminus_accept_tsel"]->Fill( fabs(t_proton_minus), event_weight );
-													histosTH1F["dy_xi_minus_rpminus_accept_tsel"]->Fill( xi_proton_minus, event_weight );
-													histosTH1F["muonDphi_dy_rpminus_accept_tsel"]->Fill(Dphi, event_weight );
-													histosTH2F["dy_DeltaPhi_vs_dimuon_pt_rpminus_accept_tsel"]->Fill(dimuon_pt,deltaphi, event_weight ); 
-
-												}
-
-
-
-												if(proton_minus_xi_range){
-													histosTH1F["t_proton_xi_range_minus_selected"]->Fill( fabs(t_proton_minus) , event_weight );}
-											}
-										}//sdminus
-										}
-									}
-
-									//-------------------
-									// Detector-level distributions
-									//-------------------
-									histosTH1F["track_multiplicity"]->Fill( n_tracks_selected, event_weight );
-
-									histosTH1F["pf_etaMax"]->Fill( pfEtaMax, event_weight ); 
-									histosTH1F["pf_etaMin"]->Fill( pfEtaMin, event_weight );
-
-									double pfDeltaEta = pfEtaMax - pfEtaMin;
-									histosTH1F["pf_deltaEta"]->Fill( pfDeltaEta, event_weight ); 
-									histosTH1F["vtx_xpos_after"]->Fill( xpos, event_weight );
-									histosTH1F["vtx_ypos_after"]->Fill( ypos, event_weight );
-
-									histosTH1F["pf_EPlusPz"]->Fill( pfEPlusPz, event_weight );
-									histosTH1F["pf_EMinusPz"]->Fill( pfEMinusPz, event_weight );
-									histosTH1F["pf_xiPlus"]->Fill( pfXiPlusReco, event_weight );
-									histosTH1F["pf_xiMinus"]->Fill( pfXiMinusReco, event_weight );
-									histosTH1F["pf_logXiPlus"]->Fill( log10(pfXiPlusReco), event_weight );
-									histosTH1F["pf_logXiMinus"]->Fill( log10(pfXiMinusReco), event_weight );
-
-									histosTH1F["t2_track_multiplicity_zplus"]->Fill( n_t2_tracks_selected_zplus, event_weight );
-									histosTH1F["t2_track_multiplicity_zminus"]->Fill( n_t2_tracks_selected_zminus, event_weight );
-									histosTH2F["t2_track_multiplicity_vs_track_multiplicity"]->Fill( n_tracks_selected, n_t2_tracks_selected, event_weight );
-									/*if( pfJet_coll->size() > 0 ){
-									  MyBaseJet const& leadingJet = ( pfJet_coll->at(0) ).mapjet[ jetCorrName ];
-									  histosTH2F["t2_track_multiplicity_vs_leadingJet_pt"]->Fill( leadingJet.Pt(), n_t2_tracks_selected, event_weight );
-									  }*/
-
-									for(vector<MyPFCand>::iterator it_pfcand = pFlow_coll->begin();
-											it_pfcand != pFlow_coll->end(); ++it_pfcand){
-										int partType = it_pfcand->particleId;
-										double eta = it_pfcand->Eta();
-										double energy = it_pfcand->Energy();
-										histosTH2F["energyVsEtaAllTypes"]->Fill( eta, energy, event_weight );
-
-										if(partType == MyPFCand::X)
-											histosTH2F["energyVsEtaUndefined"]->Fill( eta, energy, event_weight );
-										else if(partType == MyPFCand::h)
-											histosTH2F["energyVsEtaChargedHadron"]->Fill( eta, energy, event_weight ); 
-										else if(partType == MyPFCand::e) 
-											histosTH2F["energyVsEtaElectron"]->Fill( eta, energy, event_weight );
-										else if(partType == MyPFCand::mu) 
-											histosTH2F["energyVsEtaMuon"]->Fill( eta, energy, event_weight );
-										else if(partType == MyPFCand::gamma) 
-											histosTH2F["energyVsEtaGamma"]->Fill( eta, energy, event_weight );
-										else if(partType == MyPFCand::h0) 
-											histosTH2F["energyVsEtaNeutralHadron"]->Fill( eta, energy, event_weight );
-										else if(partType == MyPFCand::h_HF){ 
-											histosTH2F["energyVsEtaHadronHF"]->Fill( eta, energy, event_weight );
-											/*if( part->ecalEnergy() > 0. ) histosTH2F["energyVsEtaHadronHFEcalEnergy"]->Fill( eta, energy, event_weight );
-											  else                          histosTH2F["energyVsEtaHadronHFNoEcalEnergy"]->Fill( eta, energy, event_weight );*/
-										} else if(partType == MyPFCand::egamma_HF) 
-											histosTH2F["energyVsEtaEGammaHF"]->Fill( eta, energy, event_weight );
-									}
-
-									///////////////////////////////////////////////////////////////////////////////
-
-								} // End of loop over events in a file
-
-								cout<<"Total of evts="<< nev << endl << *itfiles << endl;
-								cout<<"n_vertices_selected ="<< n_vertices_selected << endl;
-								cout<<"n_select_Vertex_After_vtx_cut="<< n_select_Vertex_After_vtx_cut<<endl;
-								cout<<"n_tracks_selected="<< n_tracks_selected<<endl;
-								cout<<"n_muon_selected="<< n_muon_selected<<endl;
-								cout<<"n_dimuons_selected="<< n_dimuons_selected<<endl;
-								cout<<"n_dimuons_proton_left="<<n_dimuons_proton_left<<endl;
-								cout<<"n_dimuons_proton_right="<<n_dimuons_proton_right<<endl;
-								cout<<"n_dimuons_t_selected_proton_left="<< n_dimuons_t_selected_proton_left<<endl;
-								//cout<<"n_dimuons_t_at_xi_selected_proton_left="<< n_dimuons_t_at_xi_selected_proton_left<<endl;
-								cout<<"n_dimuons_t_selected_proton_right="<< n_dimuons_t_selected_proton_right<<endl;
-								//cout<<"n_dimuons_t_at_xi_selected_proton_right="<< n_dimuons_t_at_xi_selected_proton_right<<endl;	
-								cout<<"n_dy_selected="<< n_dy_selected<<endl;
-								cout<<"n_dy_proton_left="<<n_dy_proton_left<<endl;
-								cout<<"n_dy_proton_right="<<n_dy_proton_right<<endl;
-								cout<<"n_dy_t_selected_proton_left="<< n_dy_t_selected_proton_left<<endl;
-								//cout<<"n_dy_t_at_xi_selected_proton_left="<< n_dy_t_at_xi_selected_proton_left<<endl;
-								cout<<"n_dy_t_selected_proton_right="<< n_dy_t_selected_proton_right<<endl;
-								//cout<<"n_dy_t_at_xi_selected_proton_right="<< n_dy_t_at_xi_selected_proton_right<<endl;	
-								cout<<"n_dimuons_rp_accept_plus_side="<< n_dimuons_rp_selected_plus_side <<endl;
-								cout<<"n_dimuons_rp_accept_tsel_plus_side="<< n_dimuons_rp_selected_tsel_plus_side <<endl;
-								cout<<"n_dy_selected_rp_accept_plus_side ="<< n_dy_selected_rp_accept_plus_side<<endl;
-								cout<<"n_dy_selected_rp_accept_tsel_plus_side ="<< n_dy_selected_rp_accept_tsel_plus_side<<endl;
-
-								cout<<"n_dimuons_rp_accept_minus_side="<< n_dimuons_rp_selected_minus_side <<endl;
-								cout<<"n_dimuons_rp_accept_tsel_minus_side="<< n_dimuons_rp_selected_tsel_minus_side <<endl;
-								cout<<"n_dy_selected_rp_accept_minus_side ="<< n_dy_selected_rp_accept_minus_side<<endl;
-								cout<<"n_dy_selected_rp_accept_tsel_minus_side ="<< n_dy_selected_rp_accept_tsel_minus_side<<endl;
-								cout<<"nr protons="<<nprotons<<endl;
-								cout<<"nevtxisignalleft="<<nevtxisignalleft<<endl;
-								cout<<"nevtxisignalright="<<nevtxisignalright<<endl;
-
-								//  }	
-								// Close current file
-								file->Close();
-
-						} // End of loop over files
-
-
-
-						// Output file
-						TFile* output = new TFile(outputFileName.c_str(),"RECREATE");
-						output->cd();
-
-						for(map<string,TH1F*>::iterator it_histo = histosTH1F.begin();
-								it_histo != histosTH1F.end(); ++it_histo)
-							(*it_histo).second->Write();
-						for(map<string,TH2F*>::iterator it_histo = histosTH2F.begin();
-								it_histo != histosTH2F.end(); ++it_histo)
-							(*it_histo).second->Write();
-
-						output->Close();
-					}
+					///////////////////////////////////////////////////////////////////////////////
+
+				} // End of loop over events in a file
+
+				cout<<"Total of evts="<< nev << endl << *itfiles << endl;
+				cout<<"n_vertices_selected ="<< n_vertices_selected << endl;
+				cout<<"n_select_Vertex_After_vtx_cut="<< n_select_Vertex_After_vtx_cut<<endl;
+				cout<<"n_tracks_selected="<< n_tracks_selected<<endl;
+				cout<<"n_muon_selected="<< n_muon_selected<<endl;
+				cout<<"n_dimuons_selected="<< n_dimuons_selected<<endl;
+				cout<<"n_dimuons_proton_left="<<n_dimuons_proton_left<<endl;
+				cout<<"n_dimuons_proton_right="<<n_dimuons_proton_right<<endl;
+				cout<<"n_dimuons_t_selected_proton_left="<< n_dimuons_t_selected_proton_left<<endl;
+				//cout<<"n_dimuons_t_at_xi_selected_proton_left="<< n_dimuons_t_at_xi_selected_proton_left<<endl;
+				cout<<"n_dimuons_t_selected_proton_right="<< n_dimuons_t_selected_proton_right<<endl;
+				//cout<<"n_dimuons_t_at_xi_selected_proton_right="<< n_dimuons_t_at_xi_selected_proton_right<<endl;	
+				cout<<"n_dy_selected="<< n_dy_selected<<endl;
+				cout<<"n_dy_proton_left="<<n_dy_proton_left<<endl;
+				cout<<"n_dy_proton_right="<<n_dy_proton_right<<endl;
+				cout<<"n_dy_t_selected_proton_left="<< n_dy_t_selected_proton_left<<endl;
+				//cout<<"n_dy_t_at_xi_selected_proton_left="<< n_dy_t_at_xi_selected_proton_left<<endl;
+				cout<<"n_dy_t_selected_proton_right="<< n_dy_t_selected_proton_right<<endl;
+				//cout<<"n_dy_t_at_xi_selected_proton_right="<< n_dy_t_at_xi_selected_proton_right<<endl;	
+				cout<<"n_dimuons_rp_accept_plus_side="<< n_dimuons_rp_selected_plus_side <<endl;
+				cout<<"n_dimuons_rp_accept_tsel_plus_side="<< n_dimuons_rp_selected_tsel_plus_side <<endl;
+				cout<<"n_dy_selected_rp_accept_plus_side ="<< n_dy_selected_rp_accept_plus_side<<endl;
+				cout<<"n_dy_selected_rp_accept_tsel_plus_side ="<< n_dy_selected_rp_accept_tsel_plus_side<<endl;
+
+				cout<<"n_dimuons_rp_accept_minus_side="<< n_dimuons_rp_selected_minus_side <<endl;
+				cout<<"n_dimuons_rp_accept_tsel_minus_side="<< n_dimuons_rp_selected_tsel_minus_side <<endl;
+				cout<<"n_dy_selected_rp_accept_minus_side ="<< n_dy_selected_rp_accept_minus_side<<endl;
+				cout<<"n_dy_selected_rp_accept_tsel_minus_side ="<< n_dy_selected_rp_accept_tsel_minus_side<<endl;
+				cout<<"nr protons="<<nprotons<<endl;
+				cout<<"nevtxisignalleft="<<nevtxisignalleft<<endl;
+				cout<<"nevtxisignalright="<<nevtxisignalright<<endl;
+
+				//  }	
+				// Close current file
+				file->Close();
+
+		} // End of loop over files
+
+
+
+		// Output file
+		TFile* output = new TFile(outputFileName.c_str(),"RECREATE");
+		output->cd();
+
+		for(map<string,TH1F*>::iterator it_histo = histosTH1F.begin();
+				it_histo != histosTH1F.end(); ++it_histo)
+			(*it_histo).second->Write();
+		for(map<string,TH2F*>::iterator it_histo = histosTH2F.begin();
+				it_histo != histosTH2F.end(); ++it_histo)
+			(*it_histo).second->Write();
+
+		output->Close();
+	}
 
