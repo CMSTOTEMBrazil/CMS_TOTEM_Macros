@@ -1,0 +1,14 @@
+<use   name="boost"/>
+<use   name="FWCore/Framework"/>
+<use   name="GeneratorInterface/Pythia6Interface"/>
+<use   name="SimDataFormats/GeneratorProducts"/>
+<use   name="GeneratorInterface/Core"/>
+<use   name="clhep"/>
+<use   name="pythia6"/>
+<use   name="f77compiler"/>
+<architecture name="slc._[^_]*_gcc4[5-9]">                                                                                                  
+    <flags LDFLAGS="$(PYTHIA6_BASE)/lib/pydata.o"/>
+</architecture>
+<flags   EDM_PLUGIN="1"/>
+<export>
+</export>
